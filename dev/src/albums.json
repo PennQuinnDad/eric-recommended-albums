@@ -440,5 +440,62 @@
       "spotify": "https://open.spotify.com/album/1vjuTst5KkS0BPmsbPqhHy",
       "appleMusic": "https://music.apple.com/us/album/highway-61-revisited/201281514"
     }
+  },
+  {
+    "title": "A Deeper Understanding",
+    "artist": "The War on Drugs",
+    "year": 2017,
+    "genres": [
+      "Rock",
+      "Indie Rock"
+    ],
+    "copies": [],
+    "why": "",
+    "colors": [
+      "#36495c",
+      "#e9e3d6"
+    ],
+    "links": {
+      "spotify": "https://open.spotify.com/album/4TkmrrpjlPoCPpGyDN3rkF",
+      "appleMusic": "https://music.apple.com/us/album/a-deeper-understanding/1242366660"
+    }
+  },
+  {
+    "title": "Fox Confessor Brings the Flood",
+    "artist": "Neko Case",
+    "year": 2006,
+    "genres": [
+      "Americana",
+      "Alt-Country"
+    ],
+    "copies": [],
+    "why": "",
+    "colors": [
+      "#4d2b2b",
+      "#e8c9a0"
+    ],
+    "links": {
+      "spotify": "https://open.spotify.com/album/0vOQ4e4byqrvIuRuiKqzmw",
+      "appleMusic": "https://music.apple.com/us/album/fox-confessor-brings-the-flood-bonus-track-version/1485022603"
+    }
+  },
+  {
+    "title": "Physical Graffiti",
+    "artist": "Led Zeppelin",
+    "year": 1975,
+    "genres": [
+      "Rock",
+      "Hard Rock"
+    ],
+    "copies": [],
+    "why": "",
+    "colors": [
+      "#b7a07a",
+      "#2a2017"
+    ],
+    "links": {
+      "spotify": "https://open.spotify.com/album/4Q7cPyiP8cMIlUEHAqeYfd",
+      "appleMusic": "https://music.apple.com/us/album/physical-graffiti-remastered/580707980"
+    }
   }
 ]

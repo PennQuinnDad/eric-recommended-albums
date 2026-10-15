@@ -28,8 +28,11 @@ The master list of recommended albums. The site reads its copy of this data from
 | 20 | Another Side of Bob Dylan | Bob Dylan | 1964 † | Folk † | | |
 | 21 | The Freewheelin' Bob Dylan | Bob Dylan | 1963 † | Folk † | | |
 | 22 | Highway 61 Revisited | Bob Dylan | 1965 † | Rock, Folk Rock † | | |
+| 23 | A Deeper Understanding | The War on Drugs | 2017 † | Rock, Indie Rock † | | |
+| 24 | Fox Confessor Brings the Flood | Neko Case | 2006 † | Americana, Alt-Country † | | |
+| 25 | Physical Graffiti | Led Zeppelin | 1975 † | Rock, Hard Rock † | | |
 
-Albums 13–22 were added on 2026-10-15 from Eric's message, which gave only titles and artists. Their years and genres were filled in from general knowledge.
+Albums 13–25 were added on 2026-10-15 from Eric's messages, which gave only titles and artists. Their years and genres were filled in from general knowledge.
 
 ## Listening links
 
@@ -59,6 +62,9 @@ Every album must have both links. These are verified to be the standard edition:
 | Another Side of Bob Dylan | [Spotify](https://open.spotify.com/album/3q1W9iVdyuwVOGKn696Oh0) | [Apple Music](https://music.apple.com/us/album/another-side-of-bob-dylan/198161466) |
 | The Freewheelin' Bob Dylan | [Spotify](https://open.spotify.com/album/0o1uFxZ1VTviqvNaYkTJek) | [Apple Music](https://music.apple.com/us/album/the-freewheelin-bob-dylan/190758914) |
 | Highway 61 Revisited | [Spotify](https://open.spotify.com/album/1vjuTst5KkS0BPmsbPqhHy) (Spotify's main listing: the 9 original tracks, then 7 bonus takes) | [Apple Music](https://music.apple.com/us/album/highway-61-revisited/201281514) |
+| A Deeper Understanding | [Spotify](https://open.spotify.com/album/4TkmrrpjlPoCPpGyDN3rkF) | [Apple Music](https://music.apple.com/us/album/a-deeper-understanding/1242366660) |
+| Fox Confessor Brings the Flood | [Spotify](https://open.spotify.com/album/0vOQ4e4byqrvIuRuiKqzmw) (bonus track version, the only one on Spotify: the 12 originals, then a demo) | [Apple Music](https://music.apple.com/us/album/fox-confessor-brings-the-flood-bonus-track-version/1485022603) (same; the only listing) |
+| Physical Graffiti | [Spotify](https://open.spotify.com/album/4Q7cPyiP8cMIlUEHAqeYfd) (remaster) | [Apple Music](https://music.apple.com/us/album/physical-graffiti-remastered/580707980) (remaster) |
 
 ## Changes from the source
 
