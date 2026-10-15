@@ -611,5 +611,24 @@
       "spotify": "https://open.spotify.com/album/5GRnydamKvIeG46dycID6v",
       "appleMusic": "https://music.apple.com/us/album/fleet-foxes/281086394"
     }
+  },
+  {
+    "title": "Teens of Denial",
+    "artist": "Car Seat Headrest",
+    "year": 2016,
+    "genres": [
+      "Indie Rock",
+      "Rock"
+    ],
+    "copies": [],
+    "why": "",
+    "colors": [
+      "#e8b04a",
+      "#2a2238"
+    ],
+    "links": {
+      "spotify": "https://open.spotify.com/album/3KpYyDP8q8sUBxatHaYEsP",
+      "appleMusic": "https://music.apple.com/us/album/teens-of-denial/1589252471"
+    }
   }
 ]
