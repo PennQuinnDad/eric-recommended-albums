@@ -65,6 +65,32 @@ function cover(album) {
   );
 }
 
+const services = [
+  { key: 'spotify', label: 'Spotify', class: 'listen-spotify' },
+  { key: 'appleMusic', label: 'Apple Music', class: 'listen-apple' },
+];
+
+function listenLinks(album) {
+  return el(
+    'div',
+    { class: 'listen' },
+    services.map((s) =>
+      el(
+        'a',
+        {
+          class: `listen-btn ${s.class}`,
+          href: album.links[s.key],
+          target: '_blank',
+          rel: 'noopener',
+          'aria-label': `Listen to ${album.title} on ${s.label}`,
+        },
+        el('span', { class: 'play', 'aria-hidden': 'true' }),
+        s.label,
+      ),
+    ),
+  );
+}
+
 function card(album) {
   return el(
     'li',
@@ -77,6 +103,7 @@ function card(album) {
       el('p', { class: 'meta' }, album.artist, el('span', { class: 'dot' }, ' · '), String(album.year)),
       album.why ? el('p', { class: 'why' }, album.why) : null,
       el('ul', { class: 'tags', 'aria-label': 'Genres' }, album.genres.map((g) => el('li', {}, g))),
+      listenLinks(album),
       el('p', { class: 'copies' }, 'On my shelf: ', album.copies.join(' · ')),
     ),
   );

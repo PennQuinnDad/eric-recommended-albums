@@ -3,108 +3,254 @@
     "title": "Automatic for the People",
     "artist": "R.E.M.",
     "year": 1992,
-    "genres": ["Alternative Rock", "Rock"],
-    "copies": ["Craft Recordings, 2023"],
+    "genres": [
+      "Alternative Rock",
+      "Rock"
+    ],
+    "copies": [
+      "Craft Recordings, 2023"
+    ],
     "why": "",
-    "colors": ["#1c1c1c", "#e9e4d8"]
+    "colors": [
+      "#1c1c1c",
+      "#e9e4d8"
+    ],
+    "links": {
+      "spotify": "https://open.spotify.com/album/0BiNb8HYR4JvuxUa31Z58Q",
+      "appleMusic": "https://music.apple.com/us/album/automatic-for-the-people/1440949853"
+    }
   },
   {
     "title": "Blood on the Tracks",
     "artist": "Bob Dylan",
     "year": 1975,
-    "genres": ["Folk Rock", "Rock"],
-    "copies": ["Columbia, 2003"],
+    "genres": [
+      "Folk Rock",
+      "Rock"
+    ],
+    "copies": [
+      "Columbia, 2003"
+    ],
     "why": "",
-    "colors": ["#8c2f1b", "#f1d9b5"]
+    "colors": [
+      "#8c2f1b",
+      "#f1d9b5"
+    ],
+    "links": {
+      "spotify": "https://open.spotify.com/album/4WD4pslu83FF6oMa1e19mF",
+      "appleMusic": "https://music.apple.com/us/album/blood-on-the-tracks/158320766"
+    }
   },
   {
     "title": "Head Hunters",
     "artist": "Herbie Hancock",
     "year": 1973,
-    "genres": ["Jazz", "Abstract"],
-    "copies": ["Sony Records Int'l, 2020"],
+    "genres": [
+      "Jazz",
+      "Abstract"
+    ],
+    "copies": [
+      "Sony Records Int'l, 2020"
+    ],
     "why": "",
-    "colors": ["#e8a317", "#3b1e54"]
+    "colors": [
+      "#e8a317",
+      "#3b1e54"
+    ],
+    "links": {
+      "spotify": "https://open.spotify.com/album/5fmIolILp5NAtNYiRPjhzA",
+      "appleMusic": "https://music.apple.com/us/album/head-hunters/158571524"
+    }
   },
   {
     "title": "Nebraska",
     "artist": "Bruce Springsteen",
     "year": 1982,
-    "genres": ["Rock", "Acoustic"],
-    "copies": ["Columbia, 2022"],
+    "genres": [
+      "Rock",
+      "Acoustic"
+    ],
+    "copies": [
+      "Columbia, 2022"
+    ],
     "why": "",
-    "colors": ["#2b2b2b", "#c9c2b4"]
+    "colors": [
+      "#2b2b2b",
+      "#c9c2b4"
+    ],
+    "links": {
+      "spotify": "https://open.spotify.com/album/6yskFQZNlLYhkchAxELHi6",
+      "appleMusic": "https://music.apple.com/us/album/nebraska/185798980"
+    }
   },
   {
     "title": "Rumours",
     "artist": "Fleetwood Mac",
     "year": 1977,
-    "genres": ["Rock", "Pop Rock"],
-    "copies": ["Warner Records, 2019 (Japanese edition)"],
+    "genres": [
+      "Rock",
+      "Pop Rock"
+    ],
+    "copies": [
+      "Warner Records, 2019 (Japanese edition)"
+    ],
     "why": "",
-    "colors": ["#efe6d2", "#1f1a17"]
+    "colors": [
+      "#efe6d2",
+      "#1f1a17"
+    ],
+    "links": {
+      "spotify": "https://open.spotify.com/album/1bt6q2SruMsBtcerNVtpZB",
+      "appleMusic": "https://music.apple.com/us/album/rumours/594061854"
+    }
   },
   {
     "title": "Sgt. Pepper's Lonely Hearts Club Band",
     "artist": "The Beatles",
     "year": 1967,
-    "genres": ["Rock", "Rock & Roll"],
-    "copies": ["Apple Records, 2009"],
+    "genres": [
+      "Rock",
+      "Rock & Roll"
+    ],
+    "copies": [
+      "Apple Records, 2009"
+    ],
     "why": "",
-    "colors": ["#c8102e", "#f6c445"]
+    "colors": [
+      "#c8102e",
+      "#f6c445"
+    ],
+    "links": {
+      "spotify": "https://open.spotify.com/album/6QaVfG1pHYl1z15ZxkvVDW",
+      "appleMusic": "https://music.apple.com/us/album/sgt-peppers-lonely-hearts-club-band/1441164604"
+    }
   },
   {
     "title": "Spirit of Eden",
     "artist": "Talk Talk",
     "year": 1988,
-    "genres": ["Rock", "Experimental", "Electronic"],
-    "copies": ["Parlophone, 2026", "EMI, 2003"],
+    "genres": [
+      "Rock",
+      "Experimental",
+      "Electronic"
+    ],
+    "copies": [
+      "Parlophone, 2026",
+      "EMI, 2003"
+    ],
     "why": "",
-    "colors": ["#2f5d50", "#e7dcc0"]
+    "colors": [
+      "#2f5d50",
+      "#e7dcc0"
+    ],
+    "links": {
+      "spotify": "https://open.spotify.com/album/4YXo7p7aubyVIbNLoVlBp9",
+      "appleMusic": "https://music.apple.com/us/album/spirit-of-eden/701395363"
+    }
   },
   {
     "title": "At Fillmore East",
     "artist": "The Allman Brothers Band",
     "year": 1971,
-    "genres": ["Rock", "Blues"],
-    "copies": ["Capricorn Records, 1971", "Mercury, 2016"],
+    "genres": [
+      "Rock",
+      "Blues"
+    ],
+    "copies": [
+      "Capricorn Records, 1971",
+      "Mercury, 2016"
+    ],
     "why": "",
-    "colors": ["#5a4632", "#e8dcc6"]
+    "colors": [
+      "#5a4632",
+      "#e8dcc6"
+    ],
+    "links": {
+      "spotify": "https://open.spotify.com/album/0Y5Wlv2OJKaW0uDJ5HnUfy",
+      "appleMusic": "https://music.apple.com/us/album/at-fillmore-east-live/1440833569"
+    }
   },
   {
     "title": "The Cars",
     "artist": "The Cars",
     "year": 1978,
-    "genres": ["Rock", "New Wave"],
-    "copies": ["Elektra, 1978"],
+    "genres": [
+      "Rock",
+      "New Wave"
+    ],
+    "copies": [
+      "Elektra, 1978"
+    ],
     "why": "",
-    "colors": ["#d7263d", "#111111"]
+    "colors": [
+      "#d7263d",
+      "#111111"
+    ],
+    "links": {
+      "spotify": "https://open.spotify.com/album/4tJPWT4r4FSKwy784Qs1Fq",
+      "appleMusic": "https://music.apple.com/us/album/the-cars/1088527349"
+    }
   },
   {
     "title": "Trace",
     "artist": "Son Volt",
     "year": 1995,
-    "genres": ["Rock", "Country Rock"],
-    "copies": ["Music On Vinyl, 2020"],
+    "genres": [
+      "Rock",
+      "Country Rock"
+    ],
+    "copies": [
+      "Music On Vinyl, 2020"
+    ],
     "why": "",
-    "colors": ["#4a5a6a", "#e4dfd3"]
+    "colors": [
+      "#4a5a6a",
+      "#e4dfd3"
+    ],
+    "links": {
+      "spotify": "https://open.spotify.com/album/5secpXfB8n8zeDiA0l60K6",
+      "appleMusic": "https://music.apple.com/us/album/trace-remastered/1050409948"
+    }
   },
   {
     "title": "Wish You Were Here",
     "artist": "Pink Floyd",
     "year": 1975,
-    "genres": ["Rock", "Prog Rock"],
-    "copies": ["Columbia, 2025"],
+    "genres": [
+      "Rock",
+      "Prog Rock"
+    ],
+    "copies": [
+      "Columbia, 2025"
+    ],
     "why": "",
-    "colors": ["#e2581b", "#151515"]
+    "colors": [
+      "#e2581b",
+      "#151515"
+    ],
+    "links": {
+      "spotify": "https://open.spotify.com/album/0bCAjiUamIFqKJsekOYuRw",
+      "appleMusic": "https://music.apple.com/us/album/wish-you-were-here/1065973975"
+    }
   },
   {
     "title": "Yankee Hotel Foxtrot",
     "artist": "Wilco",
     "year": 2002,
-    "genres": ["Rock"],
-    "copies": ["Nonesuch"],
+    "genres": [
+      "Rock"
+    ],
+    "copies": [
+      "Nonesuch"
+    ],
     "why": "",
-    "colors": ["#3d4f63", "#d9d4c7"]
+    "colors": [
+      "#3d4f63",
+      "#d9d4c7"
+    ],
+    "links": {
+      "spotify": "https://open.spotify.com/album/0rPtXOMN42nsLDiShvGamv",
+      "appleMusic": "https://music.apple.com/us/album/yankee-hotel-foxtrot/300981120"
+    }
   }
 ]

@@ -24,5 +24,6 @@ Here's a list of some of the albums I would absolutely recommend. Things that ar
 
 - `dev/` is a Vite site in plain JavaScript (no framework): `dev/index.html`, `dev/src/main.js`, `dev/src/style.css`.
 - Album data lives in `dev/src/albums.json`, which is what the site reads. `project/docs/albums.md` is the human-readable master list. When an album is added or changed, update both.
+- **Every album must have a Spotify and an Apple Music link** (`links.spotify`, `links.appleMusic` in `albums.json`, plus the Listening links table in `albums.md`). Use the standard edition of the album, not deluxe or expanded, and check that the artist and track count match. `dev/vite.config.js` fails the build if any link is missing or malformed, so a deploy can't go out without them. Apple Music: the iTunes Search API (`itunes.apple.com/search`, or `/lookup?id=<artistId>&entity=album` when search misses). Spotify: find the album page, then confirm it with `open.spotify.com/oembed?url=...`.
 - Each album's `colors` pair (background, text) drives its typographic cover. Real cover art isn't used.
 - Run locally: `npm --prefix dev run dev`. Build: `npm --prefix dev run build`.

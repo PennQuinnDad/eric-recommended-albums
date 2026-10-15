@@ -19,6 +19,25 @@ The master list of recommended albums. The site reads its copy of this data from
 | 11 | Wish You Were Here | Pink Floyd | 1975 † | Rock, Prog Rock | Columbia, 2025 | |
 | 12 | Yankee Hotel Foxtrot | Wilco † | 2002 † | _cut off_ | Nonesuch, _year cut off_ | |
 
+## Listening links
+
+Every album must have both links. These are verified to be the standard edition: the right artist and the usual track count, not a deluxe or expanded edition.
+
+| Album | Spotify | Apple Music |
+| --- | --- | --- |
+| Automatic for the People | [Spotify](https://open.spotify.com/album/0BiNb8HYR4JvuxUa31Z58Q) | [Apple Music](https://music.apple.com/us/album/automatic-for-the-people/1440949853) |
+| Blood on the Tracks | [Spotify](https://open.spotify.com/album/4WD4pslu83FF6oMa1e19mF) | [Apple Music](https://music.apple.com/us/album/blood-on-the-tracks/158320766) |
+| Head Hunters | [Spotify](https://open.spotify.com/album/5fmIolILp5NAtNYiRPjhzA) | [Apple Music](https://music.apple.com/us/album/head-hunters/158571524) |
+| Nebraska | [Spotify](https://open.spotify.com/album/6yskFQZNlLYhkchAxELHi6) | [Apple Music](https://music.apple.com/us/album/nebraska/185798980) |
+| Rumours | [Spotify](https://open.spotify.com/album/1bt6q2SruMsBtcerNVtpZB) | [Apple Music](https://music.apple.com/us/album/rumours/594061854) |
+| Sgt. Pepper's Lonely Hearts Club Band | [Spotify](https://open.spotify.com/album/6QaVfG1pHYl1z15ZxkvVDW) (2009 remaster) | [Apple Music](https://music.apple.com/us/album/sgt-peppers-lonely-hearts-club-band/1441164604) |
+| Spirit of Eden | [Spotify](https://open.spotify.com/album/4YXo7p7aubyVIbNLoVlBp9) | [Apple Music](https://music.apple.com/us/album/spirit-of-eden/701395363) |
+| At Fillmore East | [Spotify](https://open.spotify.com/album/0Y5Wlv2OJKaW0uDJ5HnUfy) | [Apple Music](https://music.apple.com/us/album/at-fillmore-east-live/1440833569) |
+| The Cars | [Spotify](https://open.spotify.com/album/4tJPWT4r4FSKwy784Qs1Fq) | [Apple Music](https://music.apple.com/us/album/the-cars/1088527349) |
+| Trace | [Spotify](https://open.spotify.com/album/5secpXfB8n8zeDiA0l60K6) | [Apple Music](https://music.apple.com/us/album/trace-remastered/1050409948) (2015 remaster, the only version on Apple Music) |
+| Wish You Were Here | [Spotify](https://open.spotify.com/album/0bCAjiUamIFqKJsekOYuRw) | [Apple Music](https://music.apple.com/us/album/wish-you-were-here/1065973975) |
+| Yankee Hotel Foxtrot | [Spotify](https://open.spotify.com/album/0rPtXOMN42nsLDiShvGamv) | [Apple Music](https://music.apple.com/us/album/yankee-hotel-foxtrot/300981120) |
+
 ## Changes from the source
 
 - **Duplicates merged:** Spirit of Eden and At Fillmore East each appeared twice, once per owned pressing. Each is one row now, with both copies listed.
