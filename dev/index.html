@@ -21,17 +21,24 @@
     </header>
 
     <main>
-      <div class="controls" aria-label="Filter and sort">
+      <div class="controls" aria-label="Search, filter and sort">
+        <div class="search">
+          <svg class="search-icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5" /><path d="M13 13l4 4" /></svg>
+          <input id="search" type="search" placeholder="Search albums, artists, genres, years" aria-label="Search albums" autocomplete="off" spellcheck="false" />
+        </div>
         <div class="chips" id="genres" role="group" aria-label="Filter by genre"></div>
-        <label class="sort">
-          <span>Sort</span>
-          <select id="sort">
-            <option value="title">Album A–Z</option>
-            <option value="artist">Artist A–Z</option>
-            <option value="year-asc">Oldest first</option>
-            <option value="year-desc">Newest first</option>
-          </select>
-        </label>
+        <div class="toolbar">
+          <label class="sort">
+            <span>Sort</span>
+            <select id="sort">
+              <option value="title">Album A–Z</option>
+              <option value="artist">Artist A–Z</option>
+              <option value="year-asc">Oldest first</option>
+              <option value="year-desc">Newest first</option>
+            </select>
+          </label>
+          <button type="button" class="copy-md" id="copy-md" aria-live="polite" title="Copy the albums shown as a Markdown list, with Spotify and Apple Music links">Copy as Markdown</button>
+        </div>
       </div>
 
       <p class="count" id="count" aria-live="polite"></p>

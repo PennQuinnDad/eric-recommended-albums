@@ -1,12 +1,35 @@
 import './style.css';
 import albums from './albums.json';
 
-const state = { genre: 'All', sort: 'title' };
+const state = { genre: 'All', sort: 'title', query: '' };
 
+const searchEl = document.getElementById('search');
 const genresEl = document.getElementById('genres');
 const sortEl = document.getElementById('sort');
+const copyEl = document.getElementById('copy-md');
 const listEl = document.getElementById('albums');
 const countEl = document.getElementById('count');
+
+// Lowercase and strip accents/punctuation so "freewheelin" finds "Freewheelin'"
+// and "whats the story" finds "(What's the Story)"
+const normalize = (s) =>
+  s
+    .normalize('NFD')
+    .replace(/[̀-ͯ]/g, '')
+    .replace(/['’]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, ' ')
+    .trim();
+
+for (const album of albums) {
+  album.searchText = normalize([album.title, album.artist, album.year, ...album.genres].join(' '));
+}
+
+// Every word typed must appear somewhere in the album's title, artist, year or genres
+function matchesQuery(album) {
+  const words = normalize(state.query).split(' ').filter(Boolean);
+  return words.every((w) => album.searchText.includes(w));
+}
 
 // Ignore leading punctuation and "The" when sorting, so The Cars sits under C
 // and (What's the Story) Morning Glory? under W
@@ -109,21 +132,86 @@ function card(album) {
   );
 }
 
-function render() {
-  const shown = albums
+function visibleAlbums() {
+  return albums
     .filter((a) => state.genre === 'All' || a.genres.includes(state.genre))
+    .filter(matchesQuery)
     .sort(sorters[state.sort]);
+}
 
-  listEl.replaceChildren(...shown.map(card));
-  countEl.textContent =
-    state.genre === 'All'
-      ? `${shown.length} albums`
-      : `${shown.length} of ${albums.length} albums · ${state.genre}`;
+function render() {
+  const shown = visibleAlbums();
+
+  listEl.replaceChildren(
+    ...(shown.length
+      ? shown.map(card)
+      : [el('li', { class: 'empty' }, 'No albums match. Try a different search or genre.')]),
+  );
+
+  const filters = [state.genre !== 'All' && state.genre, state.query.trim() && `“${state.query.trim()}”`].filter(Boolean);
+  countEl.textContent = filters.length
+    ? `${shown.length} of ${albums.length} albums · ${filters.join(' · ')}`
+    : `${shown.length} albums`;
+
+  copyEl.disabled = shown.length === 0;
 
   for (const chip of genresEl.children) {
     chip.setAttribute('aria-pressed', String(chip.dataset.genre === state.genre));
   }
 }
+
+// The albums on screen as a Markdown list, ready to paste into a doc or an AI agent
+function toMarkdown(list) {
+  const filtered = list.length !== albums.length;
+  const lines = [
+    "# Eric's Recommended Albums",
+    '',
+    'The records that are bedrock to me — the ones I go back to again and again over the years, and the ones I recommend to family and friends.',
+    '',
+    `Source: ${location.origin}${location.pathname}${filtered ? ` (${list.length} of ${albums.length} albums shown)` : ''}`,
+    '',
+  ];
+  for (const a of list) {
+    lines.push(
+      `- **${a.title}** — ${a.artist} (${a.year}). ${a.genres.join(', ')}. ` +
+        `[Spotify](${a.links.spotify}) · [Apple Music](${a.links.appleMusic})`,
+    );
+    if (a.why) lines.push(`  ${a.why}`);
+  }
+  return lines.join('\n') + '\n';
+}
+
+async function copyText(text) {
+  try {
+    await navigator.clipboard.writeText(text);
+  } catch {
+    // Fallback for browsers that block the async clipboard API
+    const ta = el('textarea', { readonly: '', style: { position: 'fixed', opacity: '0' } });
+    ta.value = text;
+    document.body.append(ta);
+    ta.select();
+    document.execCommand('copy');
+    ta.remove();
+  }
+}
+
+let copyReset;
+copyEl.addEventListener('click', async () => {
+  const list = visibleAlbums();
+  await copyText(toMarkdown(list));
+  copyEl.textContent = `Copied ${list.length} album${list.length === 1 ? '' : 's'}`;
+  copyEl.classList.add('copied');
+  clearTimeout(copyReset);
+  copyReset = setTimeout(() => {
+    copyEl.textContent = 'Copy as Markdown';
+    copyEl.classList.remove('copied');
+  }, 2000);
+});
+
+searchEl.addEventListener('input', () => {
+  state.query = searchEl.value;
+  render();
+});
 
 genresEl.addEventListener('click', (e) => {
   const chip = e.target.closest('.chip');
