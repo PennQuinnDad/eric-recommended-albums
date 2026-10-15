@@ -292,6 +292,7 @@ h1 {
 }
 
 .sort {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -299,13 +300,34 @@ h1 {
   font-size: 0.85rem;
 }
 
+/* Custom chevron so the arrow gets the same breathing room as the text */
+.sort::after {
+  content: '';
+  position: absolute;
+  right: 13px;
+  top: 50%;
+  width: 6px;
+  height: 6px;
+  border-right: 1.6px solid var(--muted);
+  border-bottom: 1.6px solid var(--muted);
+  transform: translateY(-70%) rotate(45deg);
+  pointer-events: none;
+}
+
 .sort select {
+  appearance: none;
+  -webkit-appearance: none;
   font: 500 0.9rem var(--sans);
   color: var(--ink);
   background: var(--card);
   border: 1px solid var(--line);
   border-radius: 8px;
-  padding: 7px 10px;
+  padding: 7px 34px 7px 12px;
+  cursor: pointer;
+}
+
+.sort select:hover {
+  border-color: var(--muted);
 }
 
 .count {
