@@ -592,5 +592,24 @@
       "spotify": "https://open.spotify.com/album/6OgNgnMcqhcDw01qXlw8el",
       "appleMusic": "https://music.apple.com/us/album/foxes-in-the-snow/1790456398"
     }
+  },
+  {
+    "title": "Fleet Foxes",
+    "artist": "Fleet Foxes",
+    "year": 2008,
+    "genres": [
+      "Indie Folk",
+      "Folk Rock"
+    ],
+    "copies": [],
+    "why": "",
+    "colors": [
+      "#5f6b4a",
+      "#efe4c9"
+    ],
+    "links": {
+      "spotify": "https://open.spotify.com/album/5GRnydamKvIeG46dycID6v",
+      "appleMusic": "https://music.apple.com/us/album/fleet-foxes/281086394"
+    }
   }
 ]
