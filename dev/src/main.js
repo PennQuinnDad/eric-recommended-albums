@@ -215,6 +215,21 @@ copyEl.addEventListener('click', async () => {
   }, 2000);
 });
 
+// Share the page itself: copy its clean address (no search or tracking parameters)
+const copyLinkEl = document.getElementById('copy-link');
+const copyLinkLabel = document.getElementById('copy-link-label');
+let linkReset;
+copyLinkEl.addEventListener('click', async () => {
+  await copyText(`${location.origin}${location.pathname}`);
+  copyLinkLabel.textContent = 'Link copied';
+  copyLinkEl.classList.add('copied');
+  clearTimeout(linkReset);
+  linkReset = setTimeout(() => {
+    copyLinkLabel.textContent = 'Copy link';
+    copyLinkEl.classList.remove('copied');
+  }, 2000);
+});
+
 searchEl.addEventListener('input', () => {
   state.query = searchEl.value;
   render();
