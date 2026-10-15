@@ -104,7 +104,6 @@ function card(album) {
       album.why ? el('p', { class: 'why' }, album.why) : null,
       el('ul', { class: 'tags', 'aria-label': 'Genres' }, album.genres.map((g) => el('li', {}, g))),
       listenLinks(album),
-      el('p', { class: 'copies' }, 'On my shelf: ', album.copies.join(' · ')),
     ),
   );
 }
