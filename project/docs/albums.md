@@ -40,8 +40,9 @@ The master list of recommended albums. The site reads its copy of this data from
 | 32 | Teens of Denial | Car Seat Headrest | 2016 † | Indie Rock, Rock † | | |
 | 33 | Moving Pictures | Rush | 1981 † | Prog Rock, Hard Rock † | | |
 | 34 | Lifes Rich Pageant | R.E.M. | 1986 † | Alternative Rock, Rock † | | |
+| 35 | Illinois | Sufjan Stevens | 2005 † | Indie Folk, Folk † | | |
 
-Albums 13–34 were added on 2026-10-15 from Eric's messages, which gave only titles and artists. Their years and genres were filled in from general knowledge. "The new Kevin Morby record" was taken to be Little Wide Open, his most recent album in Apple Music's catalog (released 2026-05-15).
+Albums 13–35 were added on 2026-10-15 from Eric's messages, which gave only titles and artists. Their years and genres were filled in from general knowledge. "The new Kevin Morby record" was taken to be Little Wide Open, his most recent album in Apple Music's catalog (released 2026-05-15).
 
 ## Listening links
 
@@ -83,6 +84,7 @@ Every album must have both links. These are verified to be the standard edition:
 | Teens of Denial | [Spotify](https://open.spotify.com/album/3KpYyDP8q8sUBxatHaYEsP) | [Apple Music](https://music.apple.com/us/album/teens-of-denial/1589252471) |
 | Moving Pictures | [Spotify](https://open.spotify.com/album/3yBAvj1wgPEFbnUdgihqlR) (2011 remaster) | [Apple Music](https://music.apple.com/us/album/moving-pictures-remastered/1440798539) (remaster) |
 | Lifes Rich Pageant | [Spotify](https://open.spotify.com/album/5utjCgJfaqaOqfHGMzD9cB) | [Apple Music](https://music.apple.com/us/album/lifes-rich-pageant/1440850580) |
+| Illinois | [Spotify](https://open.spotify.com/album/1pOl0KEC1iQnA6F0XxV4To) | [Apple Music](https://music.apple.com/us/album/illinois/309742278) (the 22-track listing) |
 
 ## Changes from the source
 

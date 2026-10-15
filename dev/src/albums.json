@@ -668,5 +668,24 @@
       "spotify": "https://open.spotify.com/album/5utjCgJfaqaOqfHGMzD9cB",
       "appleMusic": "https://music.apple.com/us/album/lifes-rich-pageant/1440850580"
     }
+  },
+  {
+    "title": "Illinois",
+    "artist": "Sufjan Stevens",
+    "year": 2005,
+    "genres": [
+      "Indie Folk",
+      "Folk"
+    ],
+    "copies": [],
+    "why": "",
+    "colors": [
+      "#2b5a8a",
+      "#f2d36b"
+    ],
+    "links": {
+      "spotify": "https://open.spotify.com/album/1pOl0KEC1iQnA6F0XxV4To",
+      "appleMusic": "https://music.apple.com/us/album/illinois/309742278"
+    }
   }
 ]
