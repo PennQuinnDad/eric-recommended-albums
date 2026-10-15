@@ -2,7 +2,7 @@
 
 ## Setup checklist
 
-- [ ] GitHub repo created and pushed
+- [x] GitHub repo created and pushed
 - [ ] App scaffolded in `dev/` and builds locally (`npm run build`)
 - [ ] `amplify.yml` build commands and `baseDirectory` match the app
 - [ ] Amplify app created: Amplify console → **Create new app** → GitHub → pick this repo and the `main` branch
