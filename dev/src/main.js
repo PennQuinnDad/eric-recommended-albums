@@ -10,13 +10,13 @@ const copyEl = document.getElementById('copy-md');
 const listEl = document.getElementById('albums');
 const countEl = document.getElementById('count');
 
-// Lowercase and strip accents/punctuation so "freewheelin" finds "Freewheelin'"
-// and "whats the story" finds "(What's the Story)"
+// Lowercase and strip accents/punctuation so "freewheelin" finds "Freewheelin'",
+// "whats the story" finds "(What's the Story)" and "rem" finds "R.E.M."
 const normalize = (s) =>
   s
     .normalize('NFD')
     .replace(/[̀-ͯ]/g, '')
-    .replace(/['’]/g, '')
+    .replace(/['’.]/g, '')
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, ' ')
     .trim();

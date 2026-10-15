@@ -649,5 +649,24 @@
       "spotify": "https://open.spotify.com/album/3yBAvj1wgPEFbnUdgihqlR",
       "appleMusic": "https://music.apple.com/us/album/moving-pictures-remastered/1440798539"
     }
+  },
+  {
+    "title": "Lifes Rich Pageant",
+    "artist": "R.E.M.",
+    "year": 1986,
+    "genres": [
+      "Alternative Rock",
+      "Rock"
+    ],
+    "copies": [],
+    "why": "",
+    "colors": [
+      "#c79a3e",
+      "#1d1a16"
+    ],
+    "links": {
+      "spotify": "https://open.spotify.com/album/5utjCgJfaqaOqfHGMzD9cB",
+      "appleMusic": "https://music.apple.com/us/album/lifes-rich-pageant/1440850580"
+    }
   }
 ]
