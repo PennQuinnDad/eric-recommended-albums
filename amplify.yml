@@ -1,0 +1,21 @@
+# Amplify build settings. The app lives in dev/, so this is set up as a monorepo.
+# In the Amplify console, set env var AMPLIFY_MONOREPO_APP_ROOT=dev.
+# Commands below assume a Node/Vite app (output in dist/) — adjust once dev/ has an app.
+version: 1
+applications:
+  - appRoot: dev
+    frontend:
+      phases:
+        preBuild:
+          commands:
+            - npm ci
+        build:
+          commands:
+            - npm run build
+      artifacts:
+        baseDirectory: dist
+        files:
+          - '**/*'
+      cache:
+        paths:
+          - node_modules/**/*

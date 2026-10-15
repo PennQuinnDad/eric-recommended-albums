@@ -1,0 +1,20 @@
+# Media and large files stay out of git
+project/assets/*
+!project/assets/.gitkeep
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Common build output
+node_modules/
+dist/
+build/
+__pycache__/
+.venv/
