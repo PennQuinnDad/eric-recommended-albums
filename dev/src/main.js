@@ -8,8 +8,9 @@ const sortEl = document.getElementById('sort');
 const listEl = document.getElementById('albums');
 const countEl = document.getElementById('count');
 
-// Ignore a leading "The" when sorting, so The Cars sits under C
-const sortKey = (s) => s.replace(/^the\s+/i, '').toLowerCase();
+// Ignore leading punctuation and "The" when sorting, so The Cars sits under C
+// and (What's the Story) Morning Glory? under W
+const sortKey = (s) => s.replace(/^[^a-z0-9]+/i, '').replace(/^the\s+/i, '').toLowerCase();
 
 const sorters = {
   title: (a, b) => sortKey(a.title).localeCompare(sortKey(b.title)),

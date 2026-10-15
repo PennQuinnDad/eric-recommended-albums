@@ -252,5 +252,193 @@
       "spotify": "https://open.spotify.com/album/0rPtXOMN42nsLDiShvGamv",
       "appleMusic": "https://music.apple.com/us/album/yankee-hotel-foxtrot/300981120"
     }
+  },
+  {
+    "title": "Moon Safari",
+    "artist": "Air",
+    "year": 1998,
+    "genres": [
+      "Electronic",
+      "Downtempo"
+    ],
+    "copies": [],
+    "why": "",
+    "colors": [
+      "#cfdde6",
+      "#22344f"
+    ],
+    "links": {
+      "spotify": "https://open.spotify.com/album/5dmYtZVJ1bG9RyrZBRrkOA",
+      "appleMusic": "https://music.apple.com/us/album/moon-safari/693063670"
+    }
+  },
+  {
+    "title": "Southeastern",
+    "artist": "Jason Isbell",
+    "year": 2013,
+    "genres": [
+      "Americana",
+      "Folk Rock"
+    ],
+    "copies": [],
+    "why": "",
+    "colors": [
+      "#3a3631",
+      "#efe6d6"
+    ],
+    "links": {
+      "spotify": "https://open.spotify.com/album/1bg476ZQn7hmcXaU05SHV4",
+      "appleMusic": "https://music.apple.com/us/album/southeastern/1760726182"
+    }
+  },
+  {
+    "title": "Definitely Maybe",
+    "artist": "Oasis",
+    "year": 1994,
+    "genres": [
+      "Rock",
+      "Britpop"
+    ],
+    "copies": [],
+    "why": "",
+    "colors": [
+      "#3c5a7a",
+      "#f0e6d0"
+    ],
+    "links": {
+      "spotify": "https://open.spotify.com/album/5zfhhKXHK0YQdvacCs1ErM",
+      "appleMusic": "https://music.apple.com/us/album/definitely-maybe/1517506402"
+    }
+  },
+  {
+    "title": "The Dirty South",
+    "artist": "Drive-By Truckers",
+    "year": 2004,
+    "genres": [
+      "Southern Rock",
+      "Country Rock"
+    ],
+    "copies": [],
+    "why": "",
+    "colors": [
+      "#1f2a36",
+      "#e89a3c"
+    ],
+    "links": {
+      "spotify": "https://open.spotify.com/album/0P9ZRRLTGoIyqo3x08zIhk",
+      "appleMusic": "https://music.apple.com/us/album/the-dirty-south/1436923752"
+    }
+  },
+  {
+    "title": "Endtroducing.....",
+    "artist": "DJ Shadow",
+    "year": 1996,
+    "genres": [
+      "Hip Hop",
+      "Electronic"
+    ],
+    "copies": [],
+    "why": "",
+    "colors": [
+      "#6b6a5e",
+      "#f1e6c8"
+    ],
+    "links": {
+      "spotify": "https://open.spotify.com/album/4tUVkNYSFrrEqqrxBQW9PN",
+      "appleMusic": "https://music.apple.com/us/album/endtroducing/1660485817"
+    }
+  },
+  {
+    "title": "(What's the Story) Morning Glory?",
+    "artist": "Oasis",
+    "year": 1995,
+    "genres": [
+      "Rock",
+      "Britpop"
+    ],
+    "copies": [],
+    "why": "",
+    "colors": [
+      "#2e4f78",
+      "#e9e2d2"
+    ],
+    "links": {
+      "spotify": "https://open.spotify.com/album/2u30gztZTylY4RG7IvfXs8",
+      "appleMusic": "https://music.apple.com/us/album/whats-the-story-morning-glory/1517447039"
+    }
+  },
+  {
+    "title": "Marshall Crenshaw",
+    "artist": "Marshall Crenshaw",
+    "year": 1982,
+    "genres": [
+      "Rock",
+      "Power Pop"
+    ],
+    "copies": [],
+    "why": "",
+    "colors": [
+      "#6d4b7d",
+      "#f3e2c4"
+    ],
+    "links": {
+      "spotify": "https://open.spotify.com/album/1ezi8hGLdxQ7eWRFU9foAZ",
+      "appleMusic": "https://music.apple.com/us/album/marshall-crenshaw/1667714032"
+    }
+  },
+  {
+    "title": "Another Side of Bob Dylan",
+    "artist": "Bob Dylan",
+    "year": 1964,
+    "genres": [
+      "Folk"
+    ],
+    "copies": [],
+    "why": "",
+    "colors": [
+      "#4a4743",
+      "#ede6da"
+    ],
+    "links": {
+      "spotify": "https://open.spotify.com/album/3q1W9iVdyuwVOGKn696Oh0",
+      "appleMusic": "https://music.apple.com/us/album/another-side-of-bob-dylan/198161466"
+    }
+  },
+  {
+    "title": "The Freewheelin' Bob Dylan",
+    "artist": "Bob Dylan",
+    "year": 1963,
+    "genres": [
+      "Folk"
+    ],
+    "copies": [],
+    "why": "",
+    "colors": [
+      "#8a979c",
+      "#1e1d1b"
+    ],
+    "links": {
+      "spotify": "https://open.spotify.com/album/0o1uFxZ1VTviqvNaYkTJek",
+      "appleMusic": "https://music.apple.com/us/album/the-freewheelin-bob-dylan/190758914"
+    }
+  },
+  {
+    "title": "Highway 61 Revisited",
+    "artist": "Bob Dylan",
+    "year": 1965,
+    "genres": [
+      "Rock",
+      "Folk Rock"
+    ],
+    "copies": [],
+    "why": "",
+    "colors": [
+      "#c46a2b",
+      "#1b2733"
+    ],
+    "links": {
+      "spotify": "https://open.spotify.com/album/1vjuTst5KkS0BPmsbPqhHy",
+      "appleMusic": "https://music.apple.com/us/album/highway-61-revisited/201281514"
+    }
   }
 ]
