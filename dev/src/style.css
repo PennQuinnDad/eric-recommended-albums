@@ -6,8 +6,12 @@
   --line: #e2d9c9;
   --accent: #b5441b;
   --chip: #ebe3d4;
-  --spotify: #3f7a55;
-  --apple: #a8443f;
+  --spotify: #2f6345;
+  --spotify-bg: #dce8dc;
+  --spotify-bg-hover: #cfe0d0;
+  --apple: #8f3a35;
+  --apple-bg: #f2dcd7;
+  --apple-bg-hover: #ebcdc7;
   --shadow: 0 1px 2px rgb(40 30 20 / 0.06), 0 8px 24px rgb(40 30 20 / 0.08);
   --serif: 'Fraunces', Georgia, 'Times New Roman', serif;
   --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -23,8 +27,12 @@
     --line: #322d26;
     --accent: #e8794b;
     --chip: #2a2620;
-    --spotify: #7fb393;
-    --apple: #d98a82;
+    --spotify: #9cc8ac;
+    --spotify-bg: #22342a;
+    --spotify-bg-hover: #2a4033;
+    --apple: #e3a39b;
+    --apple-bg: #3b2422;
+    --apple-bg-hover: #482c29;
     --shadow: 0 1px 2px rgb(0 0 0 / 0.3), 0 8px 24px rgb(0 0 0 / 0.35);
   }
 }
@@ -294,18 +302,10 @@ h1 {
   gap: 7px;
   padding: 9px 10px;
   border-radius: 999px;
-  font: 500 0.82rem/1 var(--sans);
+  font: 600 0.82rem/1 var(--sans);
   text-decoration: none;
   white-space: nowrap;
-  color: var(--ink);
-  background: var(--chip);
-  border: 1px solid transparent;
-  transition: border-color 0.15s, background 0.15s;
-}
-
-.listen-btn:hover {
-  background: var(--card);
-  border-color: var(--line);
+  transition: background 0.15s;
 }
 
 .listen-btn:focus-visible {
@@ -313,13 +313,23 @@ h1 {
   outline-offset: 2px;
 }
 
-/* Quiet chips; only the play icon carries a muted hint of each brand color */
-.listen-spotify .play {
+/* Soft tints of each brand color, toned to sit with the card palette */
+.listen-spotify {
   color: var(--spotify);
+  background: var(--spotify-bg);
 }
 
-.listen-apple .play {
+.listen-spotify:hover {
+  background: var(--spotify-bg-hover);
+}
+
+.listen-apple {
   color: var(--apple);
+  background: var(--apple-bg);
+}
+
+.listen-apple:hover {
+  background: var(--apple-bg-hover);
 }
 
 .play {
