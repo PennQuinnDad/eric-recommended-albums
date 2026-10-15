@@ -25,7 +25,7 @@ _What does "done" look like?_
 
 **AWS Amplify, built from GitHub.** Pushing to `main` builds and deploys the app in `dev/`.
 
-- **GitHub repo:** https://github.com/Eric-Slalom-Git/erics-recommended-albums
+- **GitHub repo:** https://github.com/Eric-Slalom-Git/eric-recommended-albums
 - **Live URL:** _not deployed yet_
 - **Build settings:** `amplify.yml`. Setup steps are in `project/docs/deployment.md`.
 
