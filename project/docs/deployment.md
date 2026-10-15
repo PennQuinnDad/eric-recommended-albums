@@ -5,7 +5,7 @@
 - [x] GitHub repo created and pushed
 - [ ] App scaffolded in `dev/` and builds locally (`npm run build`)
 - [ ] `amplify.yml` build commands and `baseDirectory` match the app
-- [ ] Amplify app created: Amplify console → **Create new app** → GitHub → pick this repo and the `main` branch
+- [x] Amplify app created (`d14l4xii94mt7b`, URL https://main.d14l4xii94mt7b.amplifyapp.com/): Amplify console → **Create new app** → GitHub → pick this repo and the `main` branch
 - [ ] Monorepo setting: tick "My app is a monorepo" and set the root to `dev` (this sets `AMPLIFY_MONOREPO_APP_ROOT=dev`)
 - [ ] First deploy succeeded; live URL added to the README
 - [ ] Custom domain (optional)
