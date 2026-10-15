@@ -516,5 +516,81 @@
       "spotify": "https://open.spotify.com/album/287QQ922OsJYh8aFNGdJG5",
       "appleMusic": "https://music.apple.com/us/album/romance/1737990072"
     }
+  },
+  {
+    "title": "Little Wide Open",
+    "artist": "Kevin Morby",
+    "year": 2026,
+    "genres": [
+      "Folk Rock",
+      "Indie Rock"
+    ],
+    "copies": [],
+    "why": "",
+    "colors": [
+      "#c98f55",
+      "#2b2118"
+    ],
+    "links": {
+      "spotify": "https://open.spotify.com/album/4SE1kVQva7akjFCMxFiP7U",
+      "appleMusic": "https://music.apple.com/us/album/little-wide-open/1870715298"
+    }
+  },
+  {
+    "title": "Metamodern Sounds in Country Music",
+    "artist": "Sturgill Simpson",
+    "year": 2014,
+    "genres": [
+      "Country",
+      "Americana"
+    ],
+    "copies": [],
+    "why": "",
+    "colors": [
+      "#7a2e2a",
+      "#efe2c8"
+    ],
+    "links": {
+      "spotify": "https://open.spotify.com/album/5N1kfa3omZENLwlVhEgqHF",
+      "appleMusic": "https://music.apple.com/us/album/metamodern-sounds-in-country-music/1887707089"
+    }
+  },
+  {
+    "title": "A Sailor's Guide to Earth",
+    "artist": "Sturgill Simpson",
+    "year": 2016,
+    "genres": [
+      "Country",
+      "Americana"
+    ],
+    "copies": [],
+    "why": "",
+    "colors": [
+      "#1f3a5a",
+      "#e8c98a"
+    ],
+    "links": {
+      "spotify": "https://open.spotify.com/album/5I3UdCxtIh6hkQ7rMPUvA4",
+      "appleMusic": "https://music.apple.com/us/album/a-sailors-guide-to-earth/1088518253"
+    }
+  },
+  {
+    "title": "Foxes in the Snow",
+    "artist": "Jason Isbell",
+    "year": 2025,
+    "genres": [
+      "Americana",
+      "Folk"
+    ],
+    "copies": [],
+    "why": "",
+    "colors": [
+      "#e4e1da",
+      "#2d3238"
+    ],
+    "links": {
+      "spotify": "https://open.spotify.com/album/6OgNgnMcqhcDw01qXlw8el",
+      "appleMusic": "https://music.apple.com/us/album/foxes-in-the-snow/1790456398"
+    }
   }
 ]

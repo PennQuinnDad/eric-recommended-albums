@@ -32,8 +32,12 @@ The master list of recommended albums. The site reads its copy of this data from
 | 24 | Fox Confessor Brings the Flood | Neko Case | 2006 † | Americana, Alt-Country † | | |
 | 25 | Physical Graffiti | Led Zeppelin | 1975 † | Rock, Hard Rock † | | |
 | 26 | Romance | Fontaines D.C. | 2024 † | Rock, Post-Punk † | | |
+| 27 | Little Wide Open | Kevin Morby | 2026 | Folk Rock, Indie Rock † | | |
+| 28 | Metamodern Sounds in Country Music | Sturgill Simpson | 2014 † | Country, Americana † | | |
+| 29 | A Sailor's Guide to Earth | Sturgill Simpson | 2016 † | Country, Americana † | | |
+| 30 | Foxes in the Snow | Jason Isbell | 2025 † | Americana, Folk † | | |
 
-Albums 13–26 were added on 2026-10-15 from Eric's messages, which gave only titles and artists. Their years and genres were filled in from general knowledge.
+Albums 13–30 were added on 2026-10-15 from Eric's messages, which gave only titles and artists. Their years and genres were filled in from general knowledge. "The new Kevin Morby record" was taken to be Little Wide Open, his most recent album in Apple Music's catalog (released 2026-05-15).
 
 ## Listening links
 
@@ -67,6 +71,10 @@ Every album must have both links. These are verified to be the standard edition:
 | Fox Confessor Brings the Flood | [Spotify](https://open.spotify.com/album/0vOQ4e4byqrvIuRuiKqzmw) (bonus track version, the only one on Spotify: the 12 originals, then a demo) | [Apple Music](https://music.apple.com/us/album/fox-confessor-brings-the-flood-bonus-track-version/1485022603) (same; the only listing) |
 | Physical Graffiti | [Spotify](https://open.spotify.com/album/4Q7cPyiP8cMIlUEHAqeYfd) (remaster) | [Apple Music](https://music.apple.com/us/album/physical-graffiti-remastered/580707980) (remaster) |
 | Romance | [Spotify](https://open.spotify.com/album/287QQ922OsJYh8aFNGdJG5) | [Apple Music](https://music.apple.com/us/album/romance/1737990072) |
+| Little Wide Open | [Spotify](https://open.spotify.com/album/4SE1kVQva7akjFCMxFiP7U) | [Apple Music](https://music.apple.com/us/album/little-wide-open/1870715298) |
+| Metamodern Sounds in Country Music | [Spotify](https://open.spotify.com/album/5N1kfa3omZENLwlVhEgqHF) | [Apple Music](https://music.apple.com/us/album/metamodern-sounds-in-country-music/1887707089) |
+| A Sailor's Guide to Earth | [Spotify](https://open.spotify.com/album/5I3UdCxtIh6hkQ7rMPUvA4) | [Apple Music](https://music.apple.com/us/album/a-sailors-guide-to-earth/1088518253) |
+| Foxes in the Snow | [Spotify](https://open.spotify.com/album/6OgNgnMcqhcDw01qXlw8el) | [Apple Music](https://music.apple.com/us/album/foxes-in-the-snow/1790456398) |
 
 ## Changes from the source
 
