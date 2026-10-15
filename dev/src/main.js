@@ -1,7 +1,7 @@
 import './style.css';
 import albums from './albums.json';
 
-const state = { genre: 'All', sort: 'title', query: '' };
+const state = { genre: 'All', sort: 'year-desc', query: '' };
 
 const searchEl = document.getElementById('search');
 const genresEl = document.getElementById('genres');
@@ -38,8 +38,9 @@ const sortKey = (s) => s.replace(/^[^a-z0-9]+/i, '').replace(/^the\s+/i, '').toL
 const sorters = {
   title: (a, b) => sortKey(a.title).localeCompare(sortKey(b.title)),
   artist: (a, b) => sortKey(a.artist).localeCompare(sortKey(b.artist)) || a.year - b.year,
-  'year-asc': (a, b) => a.year - b.year,
-  'year-desc': (a, b) => b.year - a.year,
+  // Albums from the same year fall back to title order
+  'year-asc': (a, b) => a.year - b.year || sortKey(a.title).localeCompare(sortKey(b.title)),
+  'year-desc': (a, b) => b.year - a.year || sortKey(a.title).localeCompare(sortKey(b.title)),
 };
 
 // Genres ordered by how many albums carry them, then alphabetically
