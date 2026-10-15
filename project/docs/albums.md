@@ -1,6 +1,6 @@
 # Album list
 
-The master list of recommended albums. The site in `dev/` will be built from this. The raw source is `project/research/collection-paste-2026-10-15.md`.
+The master list of recommended albums. The site reads its copy of this data from `dev/src/albums.json`; keep the two in sync. The raw source is `project/research/collection-paste-2026-10-15.md`.
 
 **Released** is the album's original release year. It wasn't in the source, which only has the year each owned copy was pressed, so these years were filled in from general knowledge and are marked † until Eric confirms them. **Genres** shows only the genres visible in the source; the rest were cut off.
 

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Eric's Recommended Albums</title>
+    <meta name="description" content="The albums I keep going back to, year after year — the ones I recommend to family and friends." />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='46' fill='%231c1c1c'/><circle cx='50' cy='50' r='16' fill='%23e2581b'/><circle cx='50' cy='50' r='3' fill='%23f4efe6'/></svg>" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="masthead">
+      <p class="eyebrow">A listening list</p>
+      <h1>Eric's Recommended Albums</h1>
+      <p class="intro">
+        The records that are bedrock to me — the ones I go back to again and again over the years,
+        and the ones I recommend to family and friends.
+      </p>
+    </header>
+
+    <main>
+      <div class="controls" aria-label="Filter and sort">
+        <div class="chips" id="genres" role="group" aria-label="Filter by genre"></div>
+        <label class="sort">
+          <span>Sort</span>
+          <select id="sort">
+            <option value="title">Album A–Z</option>
+            <option value="artist">Artist A–Z</option>
+            <option value="year-asc">Oldest first</option>
+            <option value="year-desc">Newest first</option>
+          </select>
+        </label>
+      </div>
+
+      <p class="count" id="count" aria-live="polite"></p>
+      <ul class="grid" id="albums"></ul>
+    </main>
+
+    <footer class="footer">
+      <p>Every one of these is on my shelf on vinyl.</p>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,110 @@
+[
+  {
+    "title": "Automatic for the People",
+    "artist": "R.E.M.",
+    "year": 1992,
+    "genres": ["Alternative Rock", "Rock"],
+    "copies": ["Craft Recordings, 2023"],
+    "why": "",
+    "colors": ["#1c1c1c", "#e9e4d8"]
+  },
+  {
+    "title": "Blood on the Tracks",
+    "artist": "Bob Dylan",
+    "year": 1975,
+    "genres": ["Folk Rock", "Rock"],
+    "copies": ["Columbia, 2003"],
+    "why": "",
+    "colors": ["#8c2f1b", "#f1d9b5"]
+  },
+  {
+    "title": "Head Hunters",
+    "artist": "Herbie Hancock",
+    "year": 1973,
+    "genres": ["Jazz", "Abstract"],
+    "copies": ["Sony Records Int'l, 2020"],
+    "why": "",
+    "colors": ["#e8a317", "#3b1e54"]
+  },
+  {
+    "title": "Nebraska",
+    "artist": "Bruce Springsteen",
+    "year": 1982,
+    "genres": ["Rock", "Acoustic"],
+    "copies": ["Columbia, 2022"],
+    "why": "",
+    "colors": ["#2b2b2b", "#c9c2b4"]
+  },
+  {
+    "title": "Rumours",
+    "artist": "Fleetwood Mac",
+    "year": 1977,
+    "genres": ["Rock", "Pop Rock"],
+    "copies": ["Warner Records, 2019 (Japanese edition)"],
+    "why": "",
+    "colors": ["#efe6d2", "#1f1a17"]
+  },
+  {
+    "title": "Sgt. Pepper's Lonely Hearts Club Band",
+    "artist": "The Beatles",
+    "year": 1967,
+    "genres": ["Rock", "Rock & Roll"],
+    "copies": ["Apple Records, 2009"],
+    "why": "",
+    "colors": ["#c8102e", "#f6c445"]
+  },
+  {
+    "title": "Spirit of Eden",
+    "artist": "Talk Talk",
+    "year": 1988,
+    "genres": ["Rock", "Experimental", "Electronic"],
+    "copies": ["Parlophone, 2026", "EMI, 2003"],
+    "why": "",
+    "colors": ["#2f5d50", "#e7dcc0"]
+  },
+  {
+    "title": "At Fillmore East",
+    "artist": "The Allman Brothers Band",
+    "year": 1971,
+    "genres": ["Rock", "Blues"],
+    "copies": ["Capricorn Records, 1971", "Mercury, 2016"],
+    "why": "",
+    "colors": ["#5a4632", "#e8dcc6"]
+  },
+  {
+    "title": "The Cars",
+    "artist": "The Cars",
+    "year": 1978,
+    "genres": ["Rock", "New Wave"],
+    "copies": ["Elektra, 1978"],
+    "why": "",
+    "colors": ["#d7263d", "#111111"]
+  },
+  {
+    "title": "Trace",
+    "artist": "Son Volt",
+    "year": 1995,
+    "genres": ["Rock", "Country Rock"],
+    "copies": ["Music On Vinyl, 2020"],
+    "why": "",
+    "colors": ["#4a5a6a", "#e4dfd3"]
+  },
+  {
+    "title": "Wish You Were Here",
+    "artist": "Pink Floyd",
+    "year": 1975,
+    "genres": ["Rock", "Prog Rock"],
+    "copies": ["Columbia, 2025"],
+    "why": "",
+    "colors": ["#e2581b", "#151515"]
+  },
+  {
+    "title": "Yankee Hotel Foxtrot",
+    "artist": "Wilco",
+    "year": 2002,
+    "genres": ["Rock"],
+    "copies": ["Nonesuch"],
+    "why": "",
+    "colors": ["#3d4f63", "#d9d4c7"]
+  }
+]

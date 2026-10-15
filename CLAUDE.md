@@ -19,3 +19,10 @@ Here's a list of some of the albums I would absolutely recommend. Things that ar
 - Setup status and remaining steps are in `project/docs/deployment.md`. Update it and the README's Deployment section as steps are done.
 - Don't push to `main` or change the Amplify app without the user's go-ahead. A push to `main` is a production deploy.
 - GitHub: `PennQuinnDad/eric-recommended-albums` (Eric's Quinn Penn account, public repo). This repo's git config pins its sign-in to PennQuinnDad, so pushes work even though the GitHub CLI's active account may be Eric-Slalom-Git. For `gh` commands about this repo, prefix them with `GH_TOKEN=$(gh auth token --user PennQuinnDad)`.
+
+## The site
+
+- `dev/` is a Vite site in plain JavaScript (no framework): `dev/index.html`, `dev/src/main.js`, `dev/src/style.css`.
+- Album data lives in `dev/src/albums.json`, which is what the site reads. `project/docs/albums.md` is the human-readable master list. When an album is added or changed, update both.
+- Each album's `colors` pair (background, text) drives its typographic cover. Real cover art isn't used.
+- Run locally: `npm --prefix dev run dev`. Build: `npm --prefix dev run build`.
