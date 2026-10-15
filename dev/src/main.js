@@ -167,7 +167,7 @@ function toMarkdown(list) {
   const lines = [
     "# Eric's Recommended Albums",
     '',
-    'The records that are bedrock to me — the ones I go back to again and again over the years, and the ones I recommend to family and friends.',
+    "I'm an album guy. I like starting at track one and letting a record play out the way the band meant it to. Every album here holds up that way, start to finish, deep cuts and all. They've been with me for years, and they're the ones I keep telling family and friends to put on.",
     '',
     `Source: ${location.origin}${location.pathname}${filtered ? ` (${list.length} of ${albums.length} albums shown)` : ''}`,
     '',
