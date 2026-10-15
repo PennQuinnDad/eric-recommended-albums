@@ -497,5 +497,24 @@
       "spotify": "https://open.spotify.com/album/4Q7cPyiP8cMIlUEHAqeYfd",
       "appleMusic": "https://music.apple.com/us/album/physical-graffiti-remastered/580707980"
     }
+  },
+  {
+    "title": "Romance",
+    "artist": "Fontaines D.C.",
+    "year": 2024,
+    "genres": [
+      "Rock",
+      "Post-Punk"
+    ],
+    "copies": [],
+    "why": "",
+    "colors": [
+      "#c9476b",
+      "#f3e9a6"
+    ],
+    "links": {
+      "spotify": "https://open.spotify.com/album/287QQ922OsJYh8aFNGdJG5",
+      "appleMusic": "https://music.apple.com/us/album/romance/1737990072"
+    }
   }
 ]

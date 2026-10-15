@@ -31,8 +31,9 @@ The master list of recommended albums. The site reads its copy of this data from
 | 23 | A Deeper Understanding | The War on Drugs | 2017 † | Rock, Indie Rock † | | |
 | 24 | Fox Confessor Brings the Flood | Neko Case | 2006 † | Americana, Alt-Country † | | |
 | 25 | Physical Graffiti | Led Zeppelin | 1975 † | Rock, Hard Rock † | | |
+| 26 | Romance | Fontaines D.C. | 2024 † | Rock, Post-Punk † | | |
 
-Albums 13–25 were added on 2026-10-15 from Eric's messages, which gave only titles and artists. Their years and genres were filled in from general knowledge.
+Albums 13–26 were added on 2026-10-15 from Eric's messages, which gave only titles and artists. Their years and genres were filled in from general knowledge.
 
 ## Listening links
 
@@ -65,6 +66,7 @@ Every album must have both links. These are verified to be the standard edition:
 | A Deeper Understanding | [Spotify](https://open.spotify.com/album/4TkmrrpjlPoCPpGyDN3rkF) | [Apple Music](https://music.apple.com/us/album/a-deeper-understanding/1242366660) |
 | Fox Confessor Brings the Flood | [Spotify](https://open.spotify.com/album/0vOQ4e4byqrvIuRuiKqzmw) (bonus track version, the only one on Spotify: the 12 originals, then a demo) | [Apple Music](https://music.apple.com/us/album/fox-confessor-brings-the-flood-bonus-track-version/1485022603) (same; the only listing) |
 | Physical Graffiti | [Spotify](https://open.spotify.com/album/4Q7cPyiP8cMIlUEHAqeYfd) (remaster) | [Apple Music](https://music.apple.com/us/album/physical-graffiti-remastered/580707980) (remaster) |
+| Romance | [Spotify](https://open.spotify.com/album/287QQ922OsJYh8aFNGdJG5) | [Apple Music](https://music.apple.com/us/album/romance/1737990072) |
 
 ## Changes from the source
 
