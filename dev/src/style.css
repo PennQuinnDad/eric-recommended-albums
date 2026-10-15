@@ -549,9 +549,16 @@ h1 {
     display: none;
   }
 
+  /* Stacked, thumb-sized buttons: 44px tall (Apple's minimum tap target), 14px apart */
   .listen {
     flex-direction: column;
-    gap: 6px;
+    gap: 14px;
+    padding-top: 12px;
+  }
+
+  .listen-btn {
+    min-height: 44px;
+    font-size: 0.9rem;
   }
 }
 
