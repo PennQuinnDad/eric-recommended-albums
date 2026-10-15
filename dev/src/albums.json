@@ -630,5 +630,24 @@
       "spotify": "https://open.spotify.com/album/3KpYyDP8q8sUBxatHaYEsP",
       "appleMusic": "https://music.apple.com/us/album/teens-of-denial/1589252471"
     }
+  },
+  {
+    "title": "Moving Pictures",
+    "artist": "Rush",
+    "year": 1981,
+    "genres": [
+      "Prog Rock",
+      "Hard Rock"
+    ],
+    "copies": [],
+    "why": "",
+    "colors": [
+      "#b8312f",
+      "#f4ead8"
+    ],
+    "links": {
+      "spotify": "https://open.spotify.com/album/3yBAvj1wgPEFbnUdgihqlR",
+      "appleMusic": "https://music.apple.com/us/album/moving-pictures-remastered/1440798539"
+    }
   }
 ]
