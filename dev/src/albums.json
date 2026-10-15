@@ -687,5 +687,24 @@
       "spotify": "https://open.spotify.com/album/1pOl0KEC1iQnA6F0XxV4To",
       "appleMusic": "https://music.apple.com/us/album/illinois/309742278"
     }
+  },
+  {
+    "title": "Tomorrow the Green Grass",
+    "artist": "The Jayhawks",
+    "year": 1995,
+    "genres": [
+      "Alt-Country",
+      "Country Rock"
+    ],
+    "copies": [],
+    "why": "",
+    "colors": [
+      "#6e7f4f",
+      "#f1e6c8"
+    ],
+    "links": {
+      "spotify": "https://open.spotify.com/album/2tNdnAUaaomEEQIsc3Y7TC",
+      "appleMusic": "https://music.apple.com/us/album/tomorrow-the-green-grass/1443821588"
+    }
   }
 ]
