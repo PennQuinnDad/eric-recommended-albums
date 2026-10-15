@@ -21,6 +21,11 @@ const normalize = (s) =>
     .replace(/[^a-z0-9]+/g, ' ')
     .trim();
 
+// The year range in the description always matches the oldest and newest albums
+const years = albums.map((a) => a.year);
+document.getElementById('year-min').textContent = Math.min(...years);
+document.getElementById('year-max').textContent = Math.max(...years);
+
 for (const album of albums) {
   album.searchText = normalize([album.title, album.artist, album.year, ...album.genres].join(' '));
 }
@@ -167,7 +172,8 @@ function toMarkdown(list) {
   const lines = [
     "# Eric's Recommended Albums",
     '',
-    "I'm an album guy. I like starting at track one and letting a record play out the way the band meant it to. Every album here holds up that way, start to finish, deep cuts and all. They've been with me for years, and they're the ones I keep telling family and friends to put on.",
+    // Same words as the page description, without the styling
+    document.querySelector('.intro').textContent.replace(/\s+/g, ' ').trim(),
     '',
     `Source: ${location.origin}${location.pathname}${filtered ? ` (${list.length} of ${albums.length} albums shown)` : ''}`,
     '',

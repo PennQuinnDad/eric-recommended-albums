@@ -5,6 +5,7 @@
   --muted: #6b6358;
   --line: #e2d9c9;
   --accent: #b5441b;
+  --on-accent: #fffdf8;
   --chip: #ebe3d4;
   --spotify: #2f6345;
   --spotify-bg: #dce8dc;
@@ -26,6 +27,7 @@
     --muted: #a39a8c;
     --line: #322d26;
     --accent: #e8794b;
+    --on-accent: #15130f;
     --chip: #2a2620;
     --spotify: #9cc8ac;
     --spotify-bg: #22342a;
@@ -87,9 +89,30 @@ h1 {
 
 .intro {
   margin: 20px 0 0;
-  max-width: 52ch;
+  max-width: 54ch;
   color: var(--muted);
   font-size: clamp(1.05rem, 2vw, 1.2rem);
+  line-height: 1.6;
+}
+
+/* Reverse treatment: a few words set like a printed label, flipping with the theme */
+.rev {
+  background: var(--ink);
+  color: var(--paper);
+  font-weight: 600;
+  padding: 0.08em 0.4em 0.12em;
+  border-radius: 4px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  white-space: nowrap;
+}
+
+.rev-years {
+  font-family: var(--serif);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  background: var(--accent);
+  color: var(--on-accent);
 }
 
 /* Controls */
