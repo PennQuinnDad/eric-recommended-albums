@@ -1,7 +1,15 @@
 import './style.css';
 import albums from './albums.json';
 
-const state = { genre: 'All', sort: 'year-desc', query: '' };
+// Remember the Cards/Table choice on this device; the page works fine if storage is blocked
+let savedView;
+try {
+  savedView = localStorage.getItem('albums-view');
+} catch {
+  savedView = null;
+}
+
+const state = { genre: 'All', sort: 'year-desc', query: '', view: savedView === 'table' ? 'table' : 'cards' };
 
 const searchEl = document.getElementById('search');
 const genresEl = document.getElementById('genres');
@@ -9,6 +17,10 @@ const sortEl = document.getElementById('sort');
 const copyEl = document.getElementById('copy-md');
 const listEl = document.getElementById('albums');
 const countEl = document.getElementById('count');
+const viewEl = document.querySelector('.view-toggle');
+const tableWrapEl = document.getElementById('table-wrap');
+const tableHeadEl = document.getElementById('table-head');
+const tableBodyEl = document.getElementById('table-body');
 
 // Lowercase and strip accents/punctuation so "freewheelin" finds "Freewheelin'",
 // "whats the story" finds "(What's the Story)" and "rem" finds "R.E.M."
@@ -138,6 +150,61 @@ function card(album) {
   );
 }
 
+// Table view. The "Why" column only appears once at least one album has a note.
+const hasWhy = albums.some((a) => a.why);
+
+// Header buttons sort the table; each maps onto the same values as the Sort dropdown
+const sortableColumns = [
+  { label: 'Album', sort: 'title' },
+  { label: 'Artist', sort: 'artist' },
+  { label: 'Year', sort: 'year' },
+];
+
+function renderTableHead() {
+  const sortable = (c) =>
+    el('th', { scope: 'col', 'data-col': c.sort }, el('button', { type: 'button', class: 'th-sort', 'data-sort': c.sort }, c.label));
+  tableHeadEl.replaceChildren(
+    el(
+      'tr',
+      {},
+      sortable(sortableColumns[0]),
+      sortable(sortableColumns[1]),
+      sortable(sortableColumns[2]),
+      el('th', { scope: 'col', class: 'col-genres' }, 'Genres'),
+      hasWhy ? el('th', { scope: 'col' }, 'Why') : null,
+      el('th', { scope: 'col', class: 'col-listen' }, 'Listen'),
+    ),
+  );
+}
+
+function swatch(album) {
+  const [bg, fg] = album.colors;
+  return el('span', { class: 'swatch', style: { '--bg': bg, '--fg': fg }, 'aria-hidden': 'true' });
+}
+
+function row(album) {
+  return el(
+    'tr',
+    {},
+    el('th', { scope: 'row', class: 'cell-album' }, swatch(album), el('span', {}, album.title)),
+    el('td', { class: 'cell-artist' }, album.artist),
+    el('td', { class: 'cell-year' }, String(album.year)),
+    el('td', { class: 'cell-genres col-genres' }, album.genres.join(', ')),
+    hasWhy ? el('td', { class: 'cell-why' }, album.why) : null,
+    el('td', { class: 'cell-listen' }, listenLinks(album)),
+  );
+}
+
+// Which header is active, and in which direction, for screen readers and the arrow
+function syncSortHeaders() {
+  const active = { title: 'title', artist: 'artist', 'year-asc': 'year', 'year-desc': 'year' }[state.sort];
+  const direction = state.sort === 'year-desc' ? 'descending' : 'ascending';
+  for (const th of tableHeadEl.querySelectorAll('th[data-col]')) {
+    if (th.dataset.col === active) th.setAttribute('aria-sort', direction);
+    else th.removeAttribute('aria-sort');
+  }
+}
+
 function visibleAlbums() {
   return albums
     .filter((a) => state.genre === 'All' || a.genres.includes(state.genre))
@@ -147,12 +214,24 @@ function visibleAlbums() {
 
 function render() {
   const shown = visibleAlbums();
+  // With no matches, the "no albums" message shows the same way in either view
+  const showTable = state.view === 'table' && shown.length > 0;
 
-  listEl.replaceChildren(
-    ...(shown.length
-      ? shown.map(card)
-      : [el('li', { class: 'empty' }, 'No albums match. Try a different search or genre.')]),
-  );
+  listEl.hidden = showTable;
+  tableWrapEl.hidden = !showTable;
+  if (showTable) {
+    tableBodyEl.replaceChildren(...shown.map(row));
+  } else {
+    listEl.replaceChildren(
+      ...(shown.length
+        ? shown.map(card)
+        : [el('li', { class: 'empty' }, 'No albums match. Try a different search or genre.')]),
+    );
+  }
+
+  sortEl.value = state.sort;
+  syncSortHeaders();
+  for (const b of viewEl.children) b.setAttribute('aria-pressed', String(b.dataset.view === state.view));
 
   const filters = [state.genre !== 'All' && state.genre, state.query.trim() && `“${state.query.trim()}”`].filter(Boolean);
   countEl.textContent = filters.length
@@ -247,5 +326,27 @@ sortEl.addEventListener('change', () => {
   render();
 });
 
+viewEl.addEventListener('click', (e) => {
+  const button = e.target.closest('button[data-view]');
+  if (!button) return;
+  state.view = button.dataset.view;
+  try {
+    localStorage.setItem('albums-view', state.view);
+  } catch {
+    // Storage blocked: the choice just won't be remembered
+  }
+  render();
+});
+
+tableHeadEl.addEventListener('click', (e) => {
+  const button = e.target.closest('.th-sort');
+  if (!button) return;
+  // Year flips between newest and oldest; Album and Artist sort A to Z
+  if (button.dataset.sort === 'year') state.sort = state.sort === 'year-desc' ? 'year-asc' : 'year-desc';
+  else state.sort = button.dataset.sort;
+  render();
+});
+
 renderChips();
+renderTableHead();
 render();

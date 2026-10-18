@@ -39,21 +39,35 @@
         </div>
         <div class="chips" id="genres" role="group" aria-label="Filter by genre"></div>
         <div class="toolbar">
-          <label class="sort">
-            <span>Sort</span>
-            <select id="sort">
-              <option value="year-desc" selected>Newest first</option>
-              <option value="year-asc">Oldest first</option>
-              <option value="title">Album A–Z</option>
-              <option value="artist">Artist A–Z</option>
-            </select>
-          </label>
+          <div class="toolbar-main">
+            <label class="sort">
+              <span>Sort</span>
+              <select id="sort">
+                <option value="year-desc" selected>Newest first</option>
+                <option value="year-asc">Oldest first</option>
+                <option value="title">Album A–Z</option>
+                <option value="artist">Artist A–Z</option>
+              </select>
+            </label>
+            <div class="view-toggle" role="group" aria-label="View">
+              <button type="button" data-view="cards" aria-pressed="true">Cards</button>
+              <button type="button" data-view="table" aria-pressed="false">Table</button>
+            </div>
+          </div>
           <button type="button" class="copy-md" id="copy-md" aria-live="polite" title="Copy the albums shown as a Markdown list, with Spotify and Apple Music links">Copy as Markdown</button>
         </div>
       </div>
 
       <p class="count" id="count" aria-live="polite"></p>
       <ul class="grid" id="albums"></ul>
+
+      <div class="table-wrap" id="table-wrap" hidden>
+        <table class="table" id="table">
+          <caption class="sr-only">Recommended albums</caption>
+          <thead id="table-head"></thead>
+          <tbody id="table-body"></tbody>
+        </table>
+      </div>
     </main>
 
     <footer class="footer">

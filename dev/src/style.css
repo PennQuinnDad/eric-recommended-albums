@@ -568,3 +568,287 @@ h1 {
     transition: none;
   }
 }
+
+/* ---------- Table view ---------- */
+
+/* Make sure [hidden] wins over display rules like .grid */
+[hidden] {
+  display: none !important;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.toolbar-main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 18px;
+}
+
+.copy-md {
+  margin-left: auto;
+}
+
+/* Cards | Table switch */
+.view-toggle {
+  display: inline-flex;
+  padding: 2px;
+  background: var(--chip);
+  border-radius: 999px;
+}
+
+.view-toggle button {
+  appearance: none;
+  border: 0;
+  background: none;
+  padding: 6px 14px;
+  border-radius: 999px;
+  color: var(--muted);
+  font: 500 0.85rem/1 var(--sans);
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.view-toggle button:hover {
+  color: var(--ink);
+}
+
+.view-toggle button[aria-pressed='true'] {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.view-toggle button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.table-wrap {
+  background: var(--card);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.table th,
+.table td {
+  padding: 12px 16px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.table thead th {
+  padding-top: 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+  font: 600 0.72rem/1 var(--sans);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.th-sort {
+  appearance: none;
+  border: 0;
+  background: none;
+  padding: 4px 0;
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.th-sort:hover {
+  color: var(--ink);
+}
+
+.th-sort:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.table th[aria-sort] .th-sort {
+  color: var(--ink);
+}
+
+.table th[aria-sort='ascending'] .th-sort::after {
+  content: ' ↑';
+}
+
+.table th[aria-sort='descending'] .th-sort::after {
+  content: ' ↓';
+}
+
+.table tbody tr {
+  border-bottom: 1px solid var(--line);
+}
+
+.table tbody tr:last-child {
+  border-bottom: 0;
+}
+
+.table tbody tr:hover {
+  background: var(--paper);
+}
+
+.cell-album {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: 1.02rem;
+  line-height: 1.25;
+}
+
+.cell-artist {
+  color: var(--ink);
+}
+
+.cell-year,
+.cell-genres,
+.cell-why {
+  color: var(--muted);
+}
+
+.cell-year {
+  font-variant-numeric: tabular-nums;
+}
+
+.cell-why {
+  max-width: 34ch;
+}
+
+/* A tiny version of the album's cover colors */
+.swatch {
+  position: relative;
+  flex: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  background: var(--bg);
+  box-shadow: inset 0 0 0 1px rgb(0 0 0 / 0.12);
+}
+
+.swatch::after {
+  content: '';
+  position: absolute;
+  inset: 6px;
+  border-radius: 50%;
+  background: var(--fg);
+}
+
+.col-listen,
+.cell-listen {
+  text-align: right;
+  white-space: nowrap;
+}
+
+/* Smaller Spotify / Apple Music buttons that sit side by side in a row */
+.table .listen {
+  display: inline-flex;
+  flex-direction: row;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+}
+
+.table .listen-btn {
+  flex: none;
+  min-height: 0;
+  padding: 7px 12px;
+  font-size: 0.78rem;
+}
+
+@media (max-width: 860px) {
+  .table .col-genres {
+    display: none;
+  }
+}
+
+/* Phones: each album becomes a compact row instead of a squeezed table */
+@media (max-width: 560px) {
+  .table,
+  .table tbody,
+  .table tr,
+  .table th,
+  .table td {
+    display: block;
+  }
+
+  .table thead {
+    display: none;
+  }
+
+  .table tbody tr {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 6px;
+    padding: 14px 16px 16px;
+  }
+
+  .table th,
+  .table td {
+    padding: 0;
+  }
+
+  .table th.cell-album {
+    display: flex;
+    grid-column: 1 / -1;
+    margin-bottom: 4px;
+  }
+
+  .cell-artist {
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  .cell-year {
+    font-size: 0.9rem;
+  }
+
+  .cell-year::before {
+    content: '· ';
+  }
+
+  .cell-why {
+    grid-column: 1 / -1;
+    max-width: none;
+    margin-top: 6px;
+    font-size: 0.9rem;
+  }
+
+  .cell-listen {
+    grid-column: 1 / -1;
+    margin-top: 12px;
+    text-align: left;
+  }
+
+  .table .listen {
+    display: flex;
+    gap: 10px;
+    padding: 0;
+  }
+
+  .table .listen-btn {
+    flex: 1;
+    min-height: 44px;
+    font-size: 0.9rem;
+  }
+}
