@@ -6,13 +6,31 @@
     <title>Eric's Recommended Albums</title>
     <meta name="description" content="Albums that hold up start to finish, deep cuts and all. The records I keep telling family and friends to put on." />
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='46' fill='%231c1c1c'/><circle cx='50' cy='50' r='16' fill='%23e2581b'/><circle cx='50' cy='50' r='3' fill='%23f4efe6'/></svg>" />
+    <script>
+      // Apply a saved light/dark choice before the page paints, so there is no flash of the wrong theme
+      try {
+        var t = localStorage.getItem('albums-theme');
+        if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   </head>
   <body>
     <header class="masthead">
-      <p class="eyebrow">A listening list</p>
+      <div class="masthead-top">
+        <p class="eyebrow">A listening list</p>
+        <button type="button" class="theme-toggle" id="theme-toggle" data-mode="light" aria-label="Switch to dark mode" title="Switch to dark mode">
+          <svg class="icon-moon" viewBox="0 0 20 20" aria-hidden="true">
+            <path d="M16.5 11.6A6.8 6.8 0 0 1 8.4 3.5a6.8 6.8 0 1 0 8.1 8.1Z" />
+          </svg>
+          <svg class="icon-sun" viewBox="0 0 20 20" aria-hidden="true">
+            <circle cx="10" cy="10" r="3.4" />
+            <path d="M10 2.5v1.8M10 15.7v1.8M2.5 10h1.8M15.7 10h1.8M4.7 4.7l1.3 1.3M14 14l1.3 1.3M4.7 15.3 6 14M14 6l1.3-1.3" />
+          </svg>
+        </button>
+      </div>
       <h1>Eric's Recommended Albums</h1>
       <p class="intro">
         I'm an <span class="rev">album guy</span>. I like starting at track one and letting a record

@@ -16,7 +16,8 @@ I'm an album guy. I like starting at track one and letting a record play out the
 - **Listen links:** every album has a Spotify link and an Apple Music link to the standard edition. The build fails if either is missing, so a deploy can't go out without them.
 - **Copy as Markdown:** copies the albums on screen as a Markdown list with their links, ready to paste into a doc or an AI agent.
 - **Copy link:** copies the page address for sharing.
-- **Everywhere:** works on phones and desktops, in light and dark mode.
+- **Light and dark mode:** follows your device's setting automatically. A toggle in the header overrides it, and picking the mode your device already uses goes back to following it.
+- **Everywhere:** works on phones, tablets and desktops.
 
 ## Project layout
 

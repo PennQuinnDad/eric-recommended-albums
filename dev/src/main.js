@@ -309,6 +309,48 @@ copyLinkEl.addEventListener('click', async () => {
   }, 2000);
 });
 
+// Light/dark: follow the device unless the visitor has picked one with the header toggle.
+// Clicking toggles to the other mode; picking the mode the device already uses goes back to
+// following the device, so there is always a way back to "automatic".
+const themeEl = document.getElementById('theme-toggle');
+const deviceDark = window.matchMedia('(prefers-color-scheme: dark)');
+const themeValid = (v) => (v === 'light' || v === 'dark' ? v : null);
+let themeChoice;
+try {
+  themeChoice = themeValid(localStorage.getItem('albums-theme'));
+} catch {
+  themeChoice = null;
+}
+
+const deviceTheme = () => (deviceDark.matches ? 'dark' : 'light');
+const currentTheme = () => themeChoice || deviceTheme();
+
+function applyTheme() {
+  const root = document.documentElement;
+  if (themeChoice) root.dataset.theme = themeChoice;
+  else delete root.dataset.theme;
+  const mode = currentTheme();
+  const next = mode === 'dark' ? 'light' : 'dark';
+  themeEl.dataset.mode = mode;
+  themeEl.setAttribute('aria-label', `Switch to ${next} mode`);
+  themeEl.title = `Switch to ${next} mode`;
+}
+
+themeEl.addEventListener('click', () => {
+  const next = currentTheme() === 'dark' ? 'light' : 'dark';
+  themeChoice = next === deviceTheme() ? null : next;
+  try {
+    if (themeChoice) localStorage.setItem('albums-theme', themeChoice);
+    else localStorage.removeItem('albums-theme');
+  } catch {
+    // Storage blocked: the choice still applies until the page is closed
+  }
+  applyTheme();
+});
+
+// If the device switches (for example at sunset) and nothing was chosen, follow it live
+deviceDark.addEventListener('change', applyTheme);
+
 searchEl.addEventListener('input', () => {
   state.query = searchEl.value;
   render();
@@ -347,6 +389,7 @@ tableHeadEl.addEventListener('click', (e) => {
   render();
 });
 
+applyTheme();
 renderChips();
 renderTableHead();
 render();

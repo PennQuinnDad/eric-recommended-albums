@@ -19,8 +19,11 @@
   color-scheme: light dark;
 }
 
+/* Theme: follows the device's Light/Dark setting unless the visitor picks one with the
+   header toggle, which sets data-theme on <html>. The dark colors appear twice on purpose:
+   once for "device is dark and nothing was chosen", once for "dark was chosen". */
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme='light']) {
     --paper: #15130f;
     --card: #1e1b17;
     --ink: #efe8dc;
@@ -37,6 +40,29 @@
     --apple-bg-hover: #482c29;
     --shadow: 0 1px 2px rgb(0 0 0 / 0.3), 0 8px 24px rgb(0 0 0 / 0.35);
   }
+}
+
+:root[data-theme='dark'] {
+  --paper: #15130f;
+  --card: #1e1b17;
+  --ink: #efe8dc;
+  --muted: #a39a8c;
+  --line: #322d26;
+  --accent: #e8794b;
+  --on-accent: #15130f;
+  --chip: #2a2620;
+  --spotify: #9cc8ac;
+  --spotify-bg: #22342a;
+  --spotify-bg-hover: #2a4033;
+  --apple: #e3a39b;
+  --apple-bg: #3b2422;
+  --apple-bg-hover: #482c29;
+  --shadow: 0 1px 2px rgb(0 0 0 / 0.3), 0 8px 24px rgb(0 0 0 / 0.35);
+  color-scheme: dark;
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
 }
 
 * {
@@ -68,8 +94,75 @@ main,
   padding: clamp(48px, 9vw, 96px) 0 clamp(28px, 5vw, 48px);
 }
 
+/* Top row of the header: the label on the left, the light/dark toggle on the right */
+.masthead-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.theme-toggle {
+  appearance: none;
+  display: inline-grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  margin: -8px -8px -8px 0;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s, background 0.15s;
+}
+
+.theme-toggle:hover {
+  color: var(--ink);
+  border-color: var(--muted);
+  background: var(--card);
+}
+
+.theme-toggle:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.theme-toggle svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+@media (max-width: 560px) {
+  .theme-toggle {
+    width: 44px;
+    height: 44px;
+    margin: -10px -10px -10px 0;
+  }
+}
+
+/* Show the icon for the mode you would switch to */
+.theme-toggle .icon-sun {
+  display: none;
+}
+
+.theme-toggle[data-mode='dark'] .icon-moon {
+  display: none;
+}
+
+.theme-toggle[data-mode='dark'] .icon-sun {
+  display: block;
+}
+
 .eyebrow {
-  margin: 0 0 12px;
+  margin: 0;
   color: var(--accent);
   font-size: 0.8rem;
   font-weight: 600;
