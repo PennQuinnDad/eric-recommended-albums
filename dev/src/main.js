@@ -1,5 +1,6 @@
 import './style.css';
 import albums from './albums.json';
+import { isMacDesktop } from './platform.js';
 
 // Remember the Cards/Table choice on this device; the page works fine if storage is blocked
 let savedView;
@@ -9,7 +10,23 @@ try {
   savedView = null;
 }
 
-const state = { genre: 'All', sort: 'year-desc', query: '', view: savedView === 'table' ? 'table' : 'cards' };
+// "Open in app" is offered on Macs only, and starts off. iPhones and iPads already open the
+// Spotify and Music apps from ordinary links, and other computers may not have the apps.
+const macDesktop = isMacDesktop();
+let savedOpenInApp = null;
+try {
+  savedOpenInApp = localStorage.getItem('albums-open-in-app');
+} catch {
+  savedOpenInApp = null;
+}
+
+const state = {
+  genre: 'All',
+  sort: 'year-desc',
+  query: '',
+  view: savedView === 'table' ? 'table' : 'cards',
+  openInApp: macDesktop && savedOpenInApp === '1',
+};
 
 const searchEl = document.getElementById('search');
 const genresEl = document.getElementById('genres');
@@ -112,6 +129,13 @@ const services = [
   { key: 'appleMusic', label: 'Apple Music', class: 'listen-apple' },
 ];
 
+// Links that open the desktop apps directly, used only when "Open in app" is on.
+// spotify:album:<id> opens Spotify; music://... is the same address as the web link, for the Music app.
+const appLinks = {
+  spotify: (url) => `spotify:album:${url.split('/album/')[1]}`,
+  appleMusic: (url) => url.replace(/^https:/, 'music:'),
+};
+
 function listenLinks(album) {
   return el(
     'div',
@@ -121,9 +145,9 @@ function listenLinks(album) {
         'a',
         {
           class: `listen-btn ${s.class}`,
-          href: album.links[s.key],
-          target: '_blank',
-          rel: 'noopener',
+          href: state.openInApp ? appLinks[s.key](album.links[s.key]) : album.links[s.key],
+          // Web links open in a new tab; app links hand off to the app and need no tab
+          ...(state.openInApp ? {} : { target: '_blank', rel: 'noopener' }),
           'aria-label': `Listen to ${album.title} on ${s.label}`,
         },
         el('span', { class: 'play', 'aria-hidden': 'true' }),
@@ -386,6 +410,23 @@ sortEl.addEventListener('change', () => {
   state.sort = sortEl.value;
   render();
 });
+
+const appToggleEl = document.getElementById('app-toggle');
+if (macDesktop) {
+  appToggleEl.hidden = false;
+  appToggleEl.setAttribute('aria-checked', String(state.openInApp));
+  appToggleEl.addEventListener('click', () => {
+    state.openInApp = !state.openInApp;
+    try {
+      if (state.openInApp) localStorage.setItem('albums-open-in-app', '1');
+      else localStorage.removeItem('albums-open-in-app');
+    } catch {
+      // Storage blocked: the setting still applies until the page is closed
+    }
+    appToggleEl.setAttribute('aria-checked', String(state.openInApp));
+    render(); // rebuild the buttons with the right addresses
+  });
+}
 
 viewEl.addEventListener('click', (e) => {
   const button = e.target.closest('button[data-view]');

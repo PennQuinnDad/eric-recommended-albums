@@ -14,6 +14,7 @@ I'm an album guy. I like starting at track one and letting a record play out the
 - **Search:** finds albums by title, artist, genre or year. Punctuation doesn't matter, so "rem" finds R.E.M.
 - **Filter and sort:** genre buttons, plus newest first, oldest first, album A to Z, or artist A to Z.
 - **Listen links:** every album has a Spotify link and an Apple Music link to the standard edition, plus a small Discogs link to its master release page, which covers every pressing and is handy for finding vinyl. The build fails if any of the three is missing, so a deploy can't go out without them.
+- **Open in app (Mac only):** a switch, off by default, that makes the Spotify and Apple Music buttons open the desktop apps directly instead of their web pages. It only appears on a Mac, because iPhones and iPads already open the apps from ordinary links and other computers may not have them.
 - **Copy as Markdown:** copies the albums on screen as a Markdown list with their links, ready to paste into a doc or an AI agent.
 - **Copy link:** copies the page address for sharing.
 - **Light and dark mode:** follows your device's setting automatically. A toggle in the header overrides it, and picking the mode your device already uses goes back to following it.
