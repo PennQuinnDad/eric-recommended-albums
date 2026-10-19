@@ -18,6 +18,7 @@ Here's a list of some of the albums I would absolutely recommend. Things that ar
 - `amplify.yml` at the root sets `appRoot: dev`. When the app's framework or build output changes, update its build commands and `baseDirectory` to match.
 - Setup status and remaining steps are in `project/docs/deployment.md`. Update it and the README's Deployment section as steps are done.
 - Don't push to `main` or change the Amplify app without the user's go-ahead. A push to `main` is a production deploy.
+- To publish, use the project skill `/publish` (`.claude/skills/publish/`): it builds, shows what's unpushed, asks before pushing, pushes, and watches the live site until the new version is up. Don't confuse it with the account-level `/deploy` skill, which rebuilds Eric's Budget Tracker and has nothing to do with this site.
 - GitHub: `PennQuinnDad/eric-recommended-albums` (Eric's Quinn Penn account, public repo). This repo's git config pins its sign-in to PennQuinnDad, so pushes work even though the GitHub CLI's active account may be Eric-Slalom-Git. For `gh` commands about this repo, prefix them with `GH_TOKEN=$(gh auth token --user PennQuinnDad)`.
 
 ## The site

@@ -59,6 +59,10 @@ Doing it by hand: copy an existing entry in `albums.json`, then update the title
 - Live site: https://main.d14l4xii94mt7b.amplifyapp.com/
 - Repo: https://github.com/PennQuinnDad/eric-recommended-albums
 
+### Publishing with Claude Code
+
+In a Claude Code session in this project, type `/publish`. It builds the site, shows you what would go live, asks before pushing, pushes, and then watches the live site and tells you when the new version is up. If something is wrong along the way (a failed build, being behind GitHub), it stops and says so. Don't use `/deploy` for this site: that's a different skill for the Budget Tracker.
+
 ## GitHub account
 
 This repo pushes as the Quinn Penn account (`PennQuinnDad`), set up in this repo's git config. That should work from VS Code too. If VS Code asks you to sign in to GitHub, cancel and push from the terminal instead, so it doesn't use the Slalom account.
