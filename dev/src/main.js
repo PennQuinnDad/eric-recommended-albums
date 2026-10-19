@@ -133,6 +133,22 @@ function listenLinks(album) {
   );
 }
 
+// A quieter link than the two listen buttons: the album's Discogs master page, which
+// covers every pressing and reissue. Useful for finding a vinyl copy.
+function discogsLink(album) {
+  return el(
+    'a',
+    {
+      class: 'discogs-link',
+      href: album.links.discogs,
+      target: '_blank',
+      rel: 'noopener',
+      'aria-label': `${album.title} on Discogs, every pressing`,
+    },
+    'Discogs',
+  );
+}
+
 function card(album) {
   return el(
     'li',
@@ -146,6 +162,7 @@ function card(album) {
       album.why ? el('p', { class: 'why' }, album.why) : null,
       el('ul', { class: 'tags', 'aria-label': 'Genres' }, album.genres.map((g) => el('li', {}, g))),
       listenLinks(album),
+      discogsLink(album),
     ),
   );
 }
@@ -172,6 +189,7 @@ function renderTableHead() {
       sortable(sortableColumns[2]),
       el('th', { scope: 'col', class: 'col-genres' }, 'Genres'),
       hasWhy ? el('th', { scope: 'col' }, 'Why') : null,
+      el('th', { scope: 'col', class: 'col-discogs' }, 'Discogs'),
       el('th', { scope: 'col', class: 'col-listen' }, 'Listen'),
     ),
   );
@@ -191,6 +209,7 @@ function row(album) {
     el('td', { class: 'cell-year' }, String(album.year)),
     el('td', { class: 'cell-genres col-genres' }, album.genres.join(', ')),
     hasWhy ? el('td', { class: 'cell-why' }, album.why) : null,
+    el('td', { class: 'cell-discogs' }, discogsLink(album)),
     el('td', { class: 'cell-listen' }, listenLinks(album)),
   );
 }
@@ -260,7 +279,7 @@ function toMarkdown(list) {
   for (const a of list) {
     lines.push(
       `- **${a.title}** — ${a.artist} (${a.year}). ${a.genres.join(', ')}. ` +
-        `[Spotify](${a.links.spotify}) · [Apple Music](${a.links.appleMusic})`,
+        `[Spotify](${a.links.spotify}) · [Apple Music](${a.links.appleMusic}) · [Discogs](${a.links.discogs})`,
     );
     if (a.why) lines.push(`  ${a.why}`);
   }

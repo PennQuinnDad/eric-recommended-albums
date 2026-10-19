@@ -47,46 +47,46 @@ Albums 13–36 were added on 2026-10-15 from Eric's messages, which gave only ti
 
 ## Listening links
 
-Every album must have both links. These are verified to be the standard edition: the right artist and the usual track count, not a deluxe or expanded edition.
+Every album must have all three links. The Spotify and Apple Music links are the standard edition: the right artist and the usual track count, not a deluxe or expanded edition. The Discogs link is the album's master release, one page that covers every pressing and reissue.
 
-| Album | Spotify | Apple Music |
-| --- | --- | --- |
-| Automatic for the People | [Spotify](https://open.spotify.com/album/0BiNb8HYR4JvuxUa31Z58Q) | [Apple Music](https://music.apple.com/us/album/automatic-for-the-people/1440949853) |
-| Blood on the Tracks | [Spotify](https://open.spotify.com/album/4WD4pslu83FF6oMa1e19mF) | [Apple Music](https://music.apple.com/us/album/blood-on-the-tracks/158320766) |
-| Head Hunters | [Spotify](https://open.spotify.com/album/5fmIolILp5NAtNYiRPjhzA) | [Apple Music](https://music.apple.com/us/album/head-hunters/158571524) |
-| Nebraska | [Spotify](https://open.spotify.com/album/6yskFQZNlLYhkchAxELHi6) | [Apple Music](https://music.apple.com/us/album/nebraska/185798980) |
-| Rumours | [Spotify](https://open.spotify.com/album/1bt6q2SruMsBtcerNVtpZB) | [Apple Music](https://music.apple.com/us/album/rumours/594061854) |
-| Sgt. Pepper's Lonely Hearts Club Band | [Spotify](https://open.spotify.com/album/6QaVfG1pHYl1z15ZxkvVDW) (2009 remaster) | [Apple Music](https://music.apple.com/us/album/sgt-peppers-lonely-hearts-club-band/1441164604) |
-| Spirit of Eden | [Spotify](https://open.spotify.com/album/4YXo7p7aubyVIbNLoVlBp9) | [Apple Music](https://music.apple.com/us/album/spirit-of-eden/701395363) |
-| At Fillmore East | [Spotify](https://open.spotify.com/album/0Y5Wlv2OJKaW0uDJ5HnUfy) | [Apple Music](https://music.apple.com/us/album/at-fillmore-east-live/1440833569) |
-| The Cars | [Spotify](https://open.spotify.com/album/4tJPWT4r4FSKwy784Qs1Fq) | [Apple Music](https://music.apple.com/us/album/the-cars/1088527349) |
-| Trace | [Spotify](https://open.spotify.com/album/5secpXfB8n8zeDiA0l60K6) | [Apple Music](https://music.apple.com/us/album/trace-remastered/1050409948) (2015 remaster, the only version on Apple Music) |
-| Wish You Were Here | [Spotify](https://open.spotify.com/album/0bCAjiUamIFqKJsekOYuRw) | [Apple Music](https://music.apple.com/us/album/wish-you-were-here/1065973975) |
-| Yankee Hotel Foxtrot | [Spotify](https://open.spotify.com/album/0rPtXOMN42nsLDiShvGamv) | [Apple Music](https://music.apple.com/us/album/yankee-hotel-foxtrot/300981120) |
-| Moon Safari | [Spotify](https://open.spotify.com/album/5dmYtZVJ1bG9RyrZBRrkOA) | [Apple Music](https://music.apple.com/us/album/moon-safari/693063670) |
-| Southeastern | [Spotify](https://open.spotify.com/album/1bg476ZQn7hmcXaU05SHV4) | [Apple Music](https://music.apple.com/us/album/southeastern/1760726182) (the 12-track listing) |
-| Definitely Maybe | [Spotify](https://open.spotify.com/album/5zfhhKXHK0YQdvacCs1ErM) | [Apple Music](https://music.apple.com/us/album/definitely-maybe/1517506402) |
-| The Dirty South | [Spotify](https://open.spotify.com/album/0P9ZRRLTGoIyqo3x08zIhk) | [Apple Music](https://music.apple.com/us/album/the-dirty-south/1436923752) |
-| Endtroducing..... | [Spotify](https://open.spotify.com/album/4tUVkNYSFrrEqqrxBQW9PN) (full 16 tracks) | [Apple Music](https://music.apple.com/us/album/endtroducing/1660485817) |
-| (What's the Story) Morning Glory? | [Spotify](https://open.spotify.com/album/2u30gztZTylY4RG7IvfXs8) | [Apple Music](https://music.apple.com/us/album/whats-the-story-morning-glory/1517447039) |
-| Marshall Crenshaw | [Spotify](https://open.spotify.com/album/1ezi8hGLdxQ7eWRFU9foAZ) | [Apple Music](https://music.apple.com/us/album/marshall-crenshaw/1667714032) |
-| Another Side of Bob Dylan | [Spotify](https://open.spotify.com/album/3q1W9iVdyuwVOGKn696Oh0) | [Apple Music](https://music.apple.com/us/album/another-side-of-bob-dylan/198161466) |
-| The Freewheelin' Bob Dylan | [Spotify](https://open.spotify.com/album/0o1uFxZ1VTviqvNaYkTJek) | [Apple Music](https://music.apple.com/us/album/the-freewheelin-bob-dylan/190758914) |
-| Highway 61 Revisited | [Spotify](https://open.spotify.com/album/1vjuTst5KkS0BPmsbPqhHy) (Spotify's main listing: the 9 original tracks, then 7 bonus takes) | [Apple Music](https://music.apple.com/us/album/highway-61-revisited/201281514) |
-| A Deeper Understanding | [Spotify](https://open.spotify.com/album/4TkmrrpjlPoCPpGyDN3rkF) | [Apple Music](https://music.apple.com/us/album/a-deeper-understanding/1242366660) |
-| Fox Confessor Brings the Flood | [Spotify](https://open.spotify.com/album/0vOQ4e4byqrvIuRuiKqzmw) (bonus track version, the only one on Spotify: the 12 originals, then a demo) | [Apple Music](https://music.apple.com/us/album/fox-confessor-brings-the-flood-bonus-track-version/1485022603) (same; the only listing) |
-| Physical Graffiti | [Spotify](https://open.spotify.com/album/4Q7cPyiP8cMIlUEHAqeYfd) (remaster) | [Apple Music](https://music.apple.com/us/album/physical-graffiti-remastered/580707980) (remaster) |
-| Romance | [Spotify](https://open.spotify.com/album/287QQ922OsJYh8aFNGdJG5) | [Apple Music](https://music.apple.com/us/album/romance/1737990072) |
-| Little Wide Open | [Spotify](https://open.spotify.com/album/4SE1kVQva7akjFCMxFiP7U) | [Apple Music](https://music.apple.com/us/album/little-wide-open/1870715298) |
-| Metamodern Sounds in Country Music | [Spotify](https://open.spotify.com/album/5N1kfa3omZENLwlVhEgqHF) | [Apple Music](https://music.apple.com/us/album/metamodern-sounds-in-country-music/1887707089) |
-| A Sailor's Guide to Earth | [Spotify](https://open.spotify.com/album/5I3UdCxtIh6hkQ7rMPUvA4) | [Apple Music](https://music.apple.com/us/album/a-sailors-guide-to-earth/1088518253) |
-| Foxes in the Snow | [Spotify](https://open.spotify.com/album/6OgNgnMcqhcDw01qXlw8el) | [Apple Music](https://music.apple.com/us/album/foxes-in-the-snow/1790456398) |
-| Fleet Foxes | [Spotify](https://open.spotify.com/album/5GRnydamKvIeG46dycID6v) | [Apple Music](https://music.apple.com/us/album/fleet-foxes/281086394) |
-| Teens of Denial | [Spotify](https://open.spotify.com/album/3KpYyDP8q8sUBxatHaYEsP) | [Apple Music](https://music.apple.com/us/album/teens-of-denial/1589252471) |
-| Moving Pictures | [Spotify](https://open.spotify.com/album/3yBAvj1wgPEFbnUdgihqlR) (2011 remaster) | [Apple Music](https://music.apple.com/us/album/moving-pictures-remastered/1440798539) (remaster) |
-| Lifes Rich Pageant | [Spotify](https://open.spotify.com/album/5utjCgJfaqaOqfHGMzD9cB) | [Apple Music](https://music.apple.com/us/album/lifes-rich-pageant/1440850580) |
-| Illinois | [Spotify](https://open.spotify.com/album/1pOl0KEC1iQnA6F0XxV4To) | [Apple Music](https://music.apple.com/us/album/illinois/309742278) (the 22-track listing) |
-| Tomorrow the Green Grass | [Spotify](https://open.spotify.com/album/2tNdnAUaaomEEQIsc3Y7TC) | [Apple Music](https://music.apple.com/us/album/tomorrow-the-green-grass/1443821588) |
+| Album | Spotify | Apple Music | Discogs |
+| --- | --- | --- | --- |
+| Automatic for the People | [Spotify](https://open.spotify.com/album/0BiNb8HYR4JvuxUa31Z58Q) | [Apple Music](https://music.apple.com/us/album/automatic-for-the-people/1440949853) | [Discogs](https://www.discogs.com/master/57830-REM-Automatic-For-The-People) |
+| Blood on the Tracks | [Spotify](https://open.spotify.com/album/4WD4pslu83FF6oMa1e19mF) | [Apple Music](https://music.apple.com/us/album/blood-on-the-tracks/158320766) | [Discogs](https://www.discogs.com/master/3878-Bob-Dylan-Blood-On-The-Tracks) |
+| Head Hunters | [Spotify](https://open.spotify.com/album/5fmIolILp5NAtNYiRPjhzA) | [Apple Music](https://music.apple.com/us/album/head-hunters/158571524) | [Discogs](https://www.discogs.com/master/19493-Herbie-Hancock-Head-Hunters) |
+| Nebraska | [Spotify](https://open.spotify.com/album/6yskFQZNlLYhkchAxELHi6) | [Apple Music](https://music.apple.com/us/album/nebraska/185798980) | [Discogs](https://www.discogs.com/master/27192-Bruce-Springsteen-Nebraska) |
+| Rumours | [Spotify](https://open.spotify.com/album/1bt6q2SruMsBtcerNVtpZB) | [Apple Music](https://music.apple.com/us/album/rumours/594061854) | [Discogs](https://www.discogs.com/master/38722-Fleetwood-Mac-Rumours) |
+| Sgt. Pepper's Lonely Hearts Club Band | [Spotify](https://open.spotify.com/album/6QaVfG1pHYl1z15ZxkvVDW) (2009 remaster) | [Apple Music](https://music.apple.com/us/album/sgt-peppers-lonely-hearts-club-band/1441164604) | [Discogs](https://www.discogs.com/master/23934-The-Beatles-Sgt-Peppers-Lonely-Hearts-Club-Band) |
+| Spirit of Eden | [Spotify](https://open.spotify.com/album/4YXo7p7aubyVIbNLoVlBp9) | [Apple Music](https://music.apple.com/us/album/spirit-of-eden/701395363) | [Discogs](https://www.discogs.com/master/26436-Talk-Talk-Spirit-Of-Eden) |
+| At Fillmore East | [Spotify](https://open.spotify.com/album/0Y5Wlv2OJKaW0uDJ5HnUfy) | [Apple Music](https://music.apple.com/us/album/at-fillmore-east-live/1440833569) | [Discogs](https://www.discogs.com/master/17243-The-Allman-Brothers-Band-The-Allman-Brothers-Band-At-Fillmore-East) |
+| The Cars | [Spotify](https://open.spotify.com/album/4tJPWT4r4FSKwy784Qs1Fq) | [Apple Music](https://music.apple.com/us/album/the-cars/1088527349) | [Discogs](https://www.discogs.com/master/69666-The-Cars-The-Cars) |
+| Trace | [Spotify](https://open.spotify.com/album/5secpXfB8n8zeDiA0l60K6) | [Apple Music](https://music.apple.com/us/album/trace-remastered/1050409948) (2015 remaster, the only version on Apple Music) | [Discogs](https://www.discogs.com/master/87448-Son-Volt-Trace) |
+| Wish You Were Here | [Spotify](https://open.spotify.com/album/0bCAjiUamIFqKJsekOYuRw) | [Apple Music](https://music.apple.com/us/album/wish-you-were-here/1065973975) | [Discogs](https://www.discogs.com/master/11703-Pink-Floyd-Wish-You-Were-Here) |
+| Yankee Hotel Foxtrot | [Spotify](https://open.spotify.com/album/0rPtXOMN42nsLDiShvGamv) | [Apple Music](https://music.apple.com/us/album/yankee-hotel-foxtrot/300981120) | [Discogs](https://www.discogs.com/master/10363-Wilco-Yankee-Hotel-Foxtrot) |
+| Moon Safari | [Spotify](https://open.spotify.com/album/5dmYtZVJ1bG9RyrZBRrkOA) | [Apple Music](https://music.apple.com/us/album/moon-safari/693063670) | [Discogs](https://www.discogs.com/master/1622-AIR-French-Band-Moon-Safari) |
+| Southeastern | [Spotify](https://open.spotify.com/album/1bg476ZQn7hmcXaU05SHV4) | [Apple Music](https://music.apple.com/us/album/southeastern/1760726182) (the 12-track listing) | [Discogs](https://www.discogs.com/master/564464-Jason-Isbell-Southeastern) |
+| Definitely Maybe | [Spotify](https://open.spotify.com/album/5zfhhKXHK0YQdvacCs1ErM) | [Apple Music](https://music.apple.com/us/album/definitely-maybe/1517506402) | [Discogs](https://www.discogs.com/master/52255-Oasis-2-Definitely-Maybe) |
+| The Dirty South | [Spotify](https://open.spotify.com/album/0P9ZRRLTGoIyqo3x08zIhk) | [Apple Music](https://music.apple.com/us/album/the-dirty-south/1436923752) | [Discogs](https://www.discogs.com/master/188892-Drive-By-Truckers-The-Dirty-South) |
+| Endtroducing..... | [Spotify](https://open.spotify.com/album/4tUVkNYSFrrEqqrxBQW9PN) (full 16 tracks) | [Apple Music](https://music.apple.com/us/album/endtroducing/1660485817) | [Discogs](https://www.discogs.com/master/15313-DJ-Shadow-Endtroducing) |
+| (What's the Story) Morning Glory? | [Spotify](https://open.spotify.com/album/2u30gztZTylY4RG7IvfXs8) | [Apple Music](https://music.apple.com/us/album/whats-the-story-morning-glory/1517447039) | [Discogs](https://www.discogs.com/master/52220-Oasis-2-Whats-The-Story-Morning-Glory) |
+| Marshall Crenshaw | [Spotify](https://open.spotify.com/album/1ezi8hGLdxQ7eWRFU9foAZ) | [Apple Music](https://music.apple.com/us/album/marshall-crenshaw/1667714032) | [Discogs](https://www.discogs.com/master/200251-Marshall-Crenshaw-Marshall-Crenshaw) |
+| Another Side of Bob Dylan | [Spotify](https://open.spotify.com/album/3q1W9iVdyuwVOGKn696Oh0) | [Apple Music](https://music.apple.com/us/album/another-side-of-bob-dylan/198161466) | [Discogs](https://www.discogs.com/master/3730-Bob-Dylan-Another-Side-Of-Bob-Dylan) |
+| The Freewheelin' Bob Dylan | [Spotify](https://open.spotify.com/album/0o1uFxZ1VTviqvNaYkTJek) | [Apple Music](https://music.apple.com/us/album/the-freewheelin-bob-dylan/190758914) | [Discogs](https://www.discogs.com/master/4455-Bob-Dylan-The-Freewheelin-Bob-Dylan) |
+| Highway 61 Revisited | [Spotify](https://open.spotify.com/album/1vjuTst5KkS0BPmsbPqhHy) (Spotify's main listing: the 9 original tracks, then 7 bonus takes) | [Apple Music](https://music.apple.com/us/album/highway-61-revisited/201281514) | [Discogs](https://www.discogs.com/master/3986-Bob-Dylan-Highway-61-Revisited) |
+| A Deeper Understanding | [Spotify](https://open.spotify.com/album/4TkmrrpjlPoCPpGyDN3rkF) | [Apple Music](https://music.apple.com/us/album/a-deeper-understanding/1242366660) | [Discogs](https://www.discogs.com/master/1227468-The-War-On-Drugs-A-Deeper-Understanding) |
+| Fox Confessor Brings the Flood | [Spotify](https://open.spotify.com/album/0vOQ4e4byqrvIuRuiKqzmw) (bonus track version, the only one on Spotify: the 12 originals, then a demo) | [Apple Music](https://music.apple.com/us/album/fox-confessor-brings-the-flood-bonus-track-version/1485022603) (same; the only listing) | [Discogs](https://www.discogs.com/master/33143-Neko-Case-Fox-Confessor-Brings-The-Flood) |
+| Physical Graffiti | [Spotify](https://open.spotify.com/album/4Q7cPyiP8cMIlUEHAqeYfd) (remaster) | [Apple Music](https://music.apple.com/us/album/physical-graffiti-remastered/580707980) (remaster) | [Discogs](https://www.discogs.com/master/4392-Led-Zeppelin-Physical-Graffiti) |
+| Romance | [Spotify](https://open.spotify.com/album/287QQ922OsJYh8aFNGdJG5) | [Apple Music](https://music.apple.com/us/album/romance/1737990072) | [Discogs](https://www.discogs.com/master/3575920-Fontaines-DC-Romance) |
+| Little Wide Open | [Spotify](https://open.spotify.com/album/4SE1kVQva7akjFCMxFiP7U) | [Apple Music](https://music.apple.com/us/album/little-wide-open/1870715298) | [Discogs](https://www.discogs.com/master/4225152-Kevin-Morby-Little-Wide-Open) |
+| Metamodern Sounds in Country Music | [Spotify](https://open.spotify.com/album/5N1kfa3omZENLwlVhEgqHF) | [Apple Music](https://music.apple.com/us/album/metamodern-sounds-in-country-music/1887707089) | [Discogs](https://www.discogs.com/master/690603-Sturgill-Simpson-Metamodern-Sounds-In-Country-Music) |
+| A Sailor's Guide to Earth | [Spotify](https://open.spotify.com/album/5I3UdCxtIh6hkQ7rMPUvA4) | [Apple Music](https://music.apple.com/us/album/a-sailors-guide-to-earth/1088518253) | [Discogs](https://www.discogs.com/master/986307-Sturgill-Simpson-A-Sailors-Guide-To-Earth) |
+| Foxes in the Snow | [Spotify](https://open.spotify.com/album/6OgNgnMcqhcDw01qXlw8el) | [Apple Music](https://music.apple.com/us/album/foxes-in-the-snow/1790456398) | [Discogs](https://www.discogs.com/master/3771711-Jason-Isbell-Foxes-In-The-Snow) |
+| Fleet Foxes | [Spotify](https://open.spotify.com/album/5GRnydamKvIeG46dycID6v) | [Apple Music](https://music.apple.com/us/album/fleet-foxes/281086394) | [Discogs](https://www.discogs.com/master/72463-Fleet-Foxes-Fleet-Foxes) |
+| Teens of Denial | [Spotify](https://open.spotify.com/album/3KpYyDP8q8sUBxatHaYEsP) | [Apple Music](https://music.apple.com/us/album/teens-of-denial/1589252471) | [Discogs](https://www.discogs.com/master/1002690-Car-Seat-Headrest-Teens-Of-Denial) |
+| Moving Pictures | [Spotify](https://open.spotify.com/album/3yBAvj1wgPEFbnUdgihqlR) (2011 remaster) | [Apple Music](https://music.apple.com/us/album/moving-pictures-remastered/1440798539) (remaster) | [Discogs](https://www.discogs.com/master/7532-Rush-Moving-Pictures) |
+| Lifes Rich Pageant | [Spotify](https://open.spotify.com/album/5utjCgJfaqaOqfHGMzD9cB) | [Apple Music](https://music.apple.com/us/album/lifes-rich-pageant/1440850580) | [Discogs](https://www.discogs.com/master/14705-REM-Lifes-Rich-Pageant) |
+| Illinois | [Spotify](https://open.spotify.com/album/1pOl0KEC1iQnA6F0XxV4To) | [Apple Music](https://music.apple.com/us/album/illinois/309742278) (the 22-track listing) | [Discogs](https://www.discogs.com/master/14863-Sufjan-Stevens-Illinois) |
+| Tomorrow the Green Grass | [Spotify](https://open.spotify.com/album/2tNdnAUaaomEEQIsc3Y7TC) | [Apple Music](https://music.apple.com/us/album/tomorrow-the-green-grass/1443821588) | [Discogs](https://www.discogs.com/master/25857-The-Jayhawks-Tomorrow-The-Green-Grass) |
 
 ## Changes from the source
 

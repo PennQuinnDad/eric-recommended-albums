@@ -945,3 +945,90 @@ h1 {
     font-size: 0.9rem;
   }
 }
+
+/* ---------- Discogs link ---------- */
+
+/* Quiet text link with a tiny record icon, so it stays secondary to Spotify and Apple Music */
+.discogs-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  align-self: flex-start;
+  padding: 6px 2px;
+  color: var(--muted);
+  font: 500 0.78rem/1 var(--sans);
+  text-decoration: underline;
+  text-decoration-color: var(--line);
+  text-underline-offset: 3px;
+}
+
+.discogs-link::before {
+  content: '';
+  flex: none;
+  width: 12px;
+  height: 12px;
+  border: 1.5px solid currentColor;
+  border-radius: 50%;
+  background: radial-gradient(circle, currentColor 0 24%, transparent 28%);
+}
+
+.discogs-link:hover {
+  color: var(--ink);
+  text-decoration-color: currentColor;
+}
+
+.discogs-link:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* In a card the link sits right under the buttons */
+.card-body .discogs-link {
+  margin-top: -2px;
+}
+
+.table .cell-discogs {
+  white-space: nowrap;
+}
+
+.table .discogs-link {
+  padding: 4px 0;
+}
+
+@media (max-width: 860px) {
+  .table th,
+  .table td {
+    padding-inline: 10px;
+  }
+}
+
+@media (max-width: 560px) {
+  /* Phone rows: title / artist · year ........ Discogs / buttons */
+  .table tbody tr {
+    grid-template-columns: auto auto 1fr;
+  }
+
+  /* Phones use row padding, not cell padding (undo the tablet tightening above) */
+  .table th,
+  .table td {
+    padding: 0;
+  }
+
+  .table td.cell-discogs {
+    justify-self: end;
+    align-self: center;
+  }
+
+  /* Bigger touch area without making the row any taller */
+  .table td.cell-discogs .discogs-link {
+    margin: -10px 0;
+    padding: 10px 0 10px 14px;
+    font-size: 0.82rem;
+  }
+
+  .card-body .discogs-link {
+    padding: 10px 2px;
+    margin-top: -6px;
+  }
+}

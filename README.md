@@ -13,7 +13,7 @@ I'm an album guy. I like starting at track one and letting a record play out the
 - **Two views:** album cards with typographic covers, or a compact table. The choice is remembered on each device.
 - **Search:** finds albums by title, artist, genre or year. Punctuation doesn't matter, so "rem" finds R.E.M.
 - **Filter and sort:** genre buttons, plus newest first, oldest first, album A to Z, or artist A to Z.
-- **Listen links:** every album has a Spotify link and an Apple Music link to the standard edition. The build fails if either is missing, so a deploy can't go out without them.
+- **Listen links:** every album has a Spotify link and an Apple Music link to the standard edition, plus a small Discogs link to its master release page, which covers every pressing and is handy for finding vinyl. The build fails if any of the three is missing, so a deploy can't go out without them.
 - **Copy as Markdown:** copies the albums on screen as a Markdown list with their links, ready to paste into a doc or an AI agent.
 - **Copy link:** copies the page address for sharing.
 - **Light and dark mode:** follows your device's setting automatically. A toggle in the header overrides it, and picking the mode your device already uses goes back to following it.
@@ -37,6 +37,7 @@ I'm an album guy. I like starting at track one and letting a record play out the
 │   ├── docs/             Album list, deployment notes, how-to guide
 │   ├── notes/
 │   └── archive/
+├── .claude/skills/       Project skills for Claude Code: /new-album and /publish
 ├── amplify.yml           AWS Amplify build settings
 ├── CLAUDE.md             Background for Claude Code sessions
 └── README.md
@@ -59,11 +60,15 @@ npm --prefix dev run build
 
 ## Add an album
 
-1. Add an entry to `dev/src/albums.json`: title, artist, year, genres, a pair of cover colors, and both links.
-2. Add the same album to the master list in `project/docs/albums.md`.
-3. Run the build. It stops with the album's name if a Spotify or Apple Music link is missing or isn't an album page.
+With Claude Code in this project, type `/new-album` and give it an artist and title. It finds and checks the Spotify, Apple Music and Discogs links, picks the year, genres and cover colors, updates both files, builds and commits.
 
-For the links, use the standard edition of the album, not a deluxe or expanded one, and check that the artist and track count match.
+By hand:
+
+1. Add an entry to `dev/src/albums.json`: title, artist, year, genres, a pair of cover colors, and all three links.
+2. Add the same album to the master list and the Listening links table in `project/docs/albums.md`.
+3. Run the build. It stops with the album's name if any link is missing or isn't an album page.
+
+For Spotify and Apple Music, use the standard edition of the album, not a deluxe or expanded one, and check that the artist and track count match. For Discogs, use the album's master release page.
 
 ## Deployment
 

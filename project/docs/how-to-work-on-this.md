@@ -39,14 +39,14 @@ npm --prefix dev run build
 
 ## Adding an album
 
-The easiest way is to tell Claude Code: "add [album] by [artist]." It will:
+The easiest way is the project skill: in a Claude Code session here, type `/new-album` and give it an artist and title (or just say "add [album] by [artist]"). It will:
 
-1. Find the Spotify and Apple Music links and check both point to the standard edition of the right album.
-2. Pick a pair of cover colors.
+1. Find the Spotify, Apple Music and Discogs links and check each one points to the right album. Spotify and Apple Music get the standard edition, and Discogs gets the album's master page, which covers every pressing.
+2. Suggest the year and genres, and pick a pair of cover colors.
 3. Add the album to `albums.json` and `albums.md`.
-4. Build and check it in the preview.
+4. Build, check it in the preview, and commit it. It doesn't push; use `/publish` for that.
 
-Doing it by hand: copy an existing entry in `albums.json`, then update the title, artist, year, genres, colors and both links. The build fails if either link is missing or isn't an album page, so a deploy can't go out without them.
+Doing it by hand: copy an existing entry in `albums.json`, then update the title, artist, year, genres, colors and all three links. The build fails if any link is missing or isn't an album page, so a deploy can't go out without them.
 
 ## Save and publish
 
